@@ -1,0 +1,597 @@
+2022-09-25 17:41:04 error: [Error] Call to undefined method App\View\AppView::initializeUI() in C:\xampp\htdocs\inventario-crud\src\View\AppView.php on line 40
+Stack Trace:
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php:359
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\ViewBuilder.php:603
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\ViewVarsTrait.php:75
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php:771
+- C:\xampp\htdocs\inventario-crud\src\Controller\PagesController.php:65
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php:547
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:164
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\inventario-crud\webroot\index.php:40
+
+Request URL: /
+2022-09-25 17:45:00 error: [Cake\Http\Exception\MissingControllerException] Controller class Products could not be found. in C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Products',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\inventario-crud\webroot\index.php:40
+
+Request URL: /products
+2022-09-26 06:51:26 warning: Undefined variable $categories
+Request URL: /products
+Referer URL: http://localhost:8765/products/add
+Trace:
+include C:\xampp\htdocs\inventario-crud\templates\Products\index.php, line 75
+Cake\View\View::_evaluate() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Controller\Controller::invokeAction() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\xampp\htdocs\inventario-crud\webroot\index.php, line 40
+
+2022-09-26 06:51:26 warning: Undefined variable $suppliers
+Request URL: /products
+Referer URL: http://localhost:8765/products/add
+Trace:
+include C:\xampp\htdocs\inventario-crud\templates\Products\index.php, line 76
+Cake\View\View::_evaluate() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Controller\Controller::invokeAction() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\xampp\htdocs\inventario-crud\webroot\index.php, line 40
+
+2022-09-26 06:52:06 warning: Undefined variable $categories
+Request URL: /products
+Referer URL: http://localhost:8765/products/add
+Trace:
+include C:\xampp\htdocs\inventario-crud\templates\Products\index.php, line 78
+Cake\View\View::_evaluate() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Controller\Controller::invokeAction() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\xampp\htdocs\inventario-crud\webroot\index.php, line 40
+
+2022-09-26 06:52:06 warning: Undefined variable $suppliers
+Request URL: /products
+Referer URL: http://localhost:8765/products/add
+Trace:
+include C:\xampp\htdocs\inventario-crud\templates\Products\index.php, line 79
+Cake\View\View::_evaluate() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Controller\Controller::invokeAction() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\xampp\htdocs\inventario-crud\webroot\index.php, line 40
+
+2022-09-26 06:52:19 warning: Undefined variable $categories
+Request URL: /products
+Referer URL: http://localhost:8765/products
+Trace:
+include C:\xampp\htdocs\inventario-crud\templates\Products\index.php, line 78
+Cake\View\View::_evaluate() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Controller\Controller::invokeAction() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\xampp\htdocs\inventario-crud\webroot\index.php, line 40
+
+2022-09-26 06:52:19 warning: Undefined variable $suppliers
+Request URL: /products
+Referer URL: http://localhost:8765/products
+Trace:
+include C:\xampp\htdocs\inventario-crud\templates\Products\index.php, line 79
+Cake\View\View::_evaluate() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Controller\Controller::invokeAction() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\xampp\htdocs\inventario-crud\webroot\index.php, line 40
+
+2022-09-26 06:52:28 warning: Undefined variable $categories
+Request URL: /products
+Referer URL: http://localhost:8765/products
+Trace:
+include C:\xampp\htdocs\inventario-crud\templates\Products\index.php, line 78
+Cake\View\View::_evaluate() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Controller\Controller::invokeAction() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\xampp\htdocs\inventario-crud\webroot\index.php, line 40
+
+2022-09-26 06:52:28 warning: Undefined variable $suppliers
+Request URL: /products
+Referer URL: http://localhost:8765/products
+Trace:
+include C:\xampp\htdocs\inventario-crud\templates\Products\index.php, line 79
+Cake\View\View::_evaluate() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Controller\Controller::invokeAction() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\xampp\htdocs\inventario-crud\webroot\index.php, line 40
+
+2022-09-26 06:59:32 warning: Undefined variable $categories
+Request URL: /products
+Referer URL: http://localhost:8765/products
+Trace:
+include C:\xampp\htdocs\inventario-crud\templates\Products\index.php, line 78
+Cake\View\View::_evaluate() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Controller\Controller::invokeAction() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\xampp\htdocs\inventario-crud\webroot\index.php, line 40
+
+2022-09-26 06:59:32 warning: Undefined variable $suppliers
+Request URL: /products
+Referer URL: http://localhost:8765/products
+Trace:
+include C:\xampp\htdocs\inventario-crud\templates\Products\index.php, line 79
+Cake\View\View::_evaluate() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Controller\Controller::invokeAction() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\xampp\htdocs\inventario-crud\webroot\index.php, line 40
+
+2022-09-26 06:59:40 warning: Undefined variable $categories
+Request URL: /products
+Referer URL: http://localhost:8765/products
+Trace:
+include C:\xampp\htdocs\inventario-crud\templates\Products\index.php, line 78
+Cake\View\View::_evaluate() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Controller\Controller::invokeAction() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\xampp\htdocs\inventario-crud\webroot\index.php, line 40
+
+2022-09-26 06:59:40 warning: Undefined variable $suppliers
+Request URL: /products
+Referer URL: http://localhost:8765/products
+Trace:
+include C:\xampp\htdocs\inventario-crud\templates\Products\index.php, line 79
+Cake\View\View::_evaluate() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Controller\Controller::invokeAction() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\xampp\htdocs\inventario-crud\webroot\index.php, line 40
+
+2022-09-26 06:59:58 warning: Undefined variable $categories
+Request URL: /products
+Referer URL: http://localhost:8765/products
+Trace:
+include C:\xampp\htdocs\inventario-crud\templates\Products\index.php, line 73
+Cake\View\View::_evaluate() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Controller\Controller::invokeAction() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\xampp\htdocs\inventario-crud\webroot\index.php, line 40
+
+2022-09-26 06:59:58 warning: Undefined variable $suppliers
+Request URL: /products
+Referer URL: http://localhost:8765/products
+Trace:
+include C:\xampp\htdocs\inventario-crud\templates\Products\index.php, line 74
+Cake\View\View::_evaluate() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Controller\Controller::invokeAction() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\xampp\htdocs\inventario-crud\webroot\index.php, line 40
+
+2022-09-26 07:00:39 warning: Undefined variable $categories
+Request URL: /products
+Referer URL: http://localhost:8765/products
+Trace:
+include C:\xampp\htdocs\inventario-crud\templates\Products\index.php, line 72
+Cake\View\View::_evaluate() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Controller\Controller::invokeAction() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\xampp\htdocs\inventario-crud\webroot\index.php, line 40
+
+2022-09-26 07:00:39 warning: Undefined variable $suppliers
+Request URL: /products
+Referer URL: http://localhost:8765/products
+Trace:
+include C:\xampp\htdocs\inventario-crud\templates\Products\index.php, line 73
+Cake\View\View::_evaluate() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Controller\Controller::invokeAction() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\xampp\htdocs\inventario-crud\webroot\index.php, line 40
+
+2022-09-26 07:01:44 warning: Undefined variable $categories
+Request URL: /products
+Referer URL: http://localhost:8765/products
+Trace:
+include C:\xampp\htdocs\inventario-crud\templates\Products\index.php, line 77
+Cake\View\View::_evaluate() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Controller\Controller::invokeAction() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\xampp\htdocs\inventario-crud\webroot\index.php, line 40
+
+2022-09-26 07:01:44 warning: Undefined variable $suppliers
+Request URL: /products
+Referer URL: http://localhost:8765/products
+Trace:
+include C:\xampp\htdocs\inventario-crud\templates\Products\index.php, line 78
+Cake\View\View::_evaluate() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Controller\Controller::invokeAction() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() C:\xampp\htdocs\inventario-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() C:\xampp\htdocs\inventario-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\xampp\htdocs\inventario-crud\webroot\index.php, line 40
+
