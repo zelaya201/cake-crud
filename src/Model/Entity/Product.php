@@ -10,6 +10,7 @@ use Cake\ORM\Entity;
  *
  * @property int $product_id
  * @property string $product_img
+ * @property string|null $product_img_dir
  * @property string $product_description
  * @property float $product_price
  * @property int $product_stock
@@ -33,6 +34,7 @@ class Product extends Entity
      */
     protected $_accessible = [
         'product_img' => true,
+        'product_img_dir' => false,
         'product_description' => true,
         'product_price' => true,
         'product_stock' => true,

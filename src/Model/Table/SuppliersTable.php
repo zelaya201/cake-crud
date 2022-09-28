@@ -38,7 +38,7 @@ class SuppliersTable extends Table
         parent::initialize($config);
 
         $this->setTable('suppliers');
-        $this->setDisplayField('supplier_id');
+        $this->setDisplayField('supplier_name');
         $this->setPrimaryKey('supplier_id');
     }
 

@@ -16,6 +16,8 @@ class ProductsController extends AppController
      *
      * @return \Cake\Http\Response|null|void Renders view
      */
+
+
     public function index()
     {
         $this->paginate = [
@@ -23,6 +25,32 @@ class ProductsController extends AppController
         ];
         $products = $this->paginate($this->Products);
 
+        $this->add();
+
+        /* Agregar */
+        /* $product = $this->Products->newEmptyEntity();
+
+        if ($this->request->is('post')) {
+            $formData = $this->request->getData();
+
+            
+
+            $product = $this->Products->patchEntity($product, $this->request->getData());
+            $product->product_category_id = $formData['category'];
+            $product->product_supplier_id = $formData['supplier'];
+
+            
+            if ($this->Products->save($product)) {
+                $this->Flash->success(__('The product has been saved.'));
+
+                return $this->redirect(['action' => 'index']);
+            }
+            $this->Flash->error(__('The product could not be saved. Please, try again.'));
+        }
+        $categories = $this->Products->Categories->find('list', ['limit' => 200])->all();
+        $suppliers = $this->Products->Suppliers->find('list', ['limit' => 200])->all(); */
+
+        //$this->set(compact('product', 'products', 'categories', 'suppliers'));
         $this->set(compact('products'));
     }
 
@@ -50,13 +78,25 @@ class ProductsController extends AppController
     public function add()
     {
         $product = $this->Products->newEmptyEntity();
+                                          
         if ($this->request->is('post')) {
-            $product = $this->Products->patchEntity($product, $this->request->getData());
+            $formData = $this->request->getData();
+            
+            $product->product_category_id = $formData['category'];
+            $product->product_supplier_id = $formData['supplier'];
+            $product->product_img = $formData['img'];
+            $product->product_description = $formData['description'];
+            $product->product_price = $formData['price'];
+            $product->product_stock = $formData['stock'];
+            $product->product_status = $formData['status'];
+            //$product = $this->Products->patchEntity($product, $this->request->getData());
+
             if ($this->Products->save($product)) {
                 $this->Flash->success(__('The product has been saved.'));
 
                 return $this->redirect(['action' => 'index']);
             }
+
             $this->Flash->error(__('The product could not be saved. Please, try again.'));
         }
         $categories = $this->Products->Categories->find('list', ['limit' => 200])->all();

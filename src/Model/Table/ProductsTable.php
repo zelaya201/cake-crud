@@ -50,6 +50,22 @@ class ProductsTable extends Table
         $this->belongsTo('Suppliers', [
             'foreignKey' => 'product_supplier_id',
         ]);
+
+        $this->addBehavior('Proffer.Proffer', [
+            'product_img' => [	// The name of your upload field
+                'root' => WWW_ROOT . 'files', // Customise the root upload folder here, or omit to use the default
+                'dir' => 'product_img_dir',	// The name of the field to store the folder
+                'thumbnailSizes' => [ // Declare your thumbnails
+                    'square' => [	// Define the prefix of your thumbnail
+                        'w' => 300,	// Width
+                        'h' => 300,	// Height
+                        'crop' => true,
+                        'jpeg_quality'	=> 100
+                    ],
+                ],
+                'thumbnailMethod' => 'gd'	// Options are Imagick or Gd
+            ]
+        ]);
     }
 
     /**
@@ -65,6 +81,11 @@ class ProductsTable extends Table
             ->maxLength('product_img', 255)
             ->requirePresence('product_img', 'create')
             ->notEmptyString('product_img');
+
+        $validator
+            ->scalar('product_img_dir')
+            ->maxLength('product_img_dir', 255)
+            ->allowEmptyString('product_img_dir');
 
         $validator
             ->scalar('product_description')

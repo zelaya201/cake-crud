@@ -6,12 +6,13 @@
  * @var \Cake\Collection\CollectionInterface|string[] $categories
  * @var \Cake\Collection\CollectionInterface|string[] $suppliers
  */
+include 'add.php';
 ?>
 <div class="products index content">
-    <!-- <?= $this->Html->link(__('Nuevo Producto'), ['action' => 'add'], ['class' => 'button float-right']) ?> -->
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Launch demo modal
+        Nuevo Producto
     </button>
+
     <h3><?= __('Productos') ?></h3>
     <div class="table-responsive">
         <table>
@@ -38,7 +39,7 @@
                     <td><?= $this->Number->format($product->product_stock) ?></td>
                     <td><?= $this->Number->format($product->product_status) ?></td>
                     <td><?= $product->has('category') ? $product->category->category_name : '' ?></td>
-                    <td><?= $product->has('supplier') ? $product->supplier->supplier_id : '' ?></td>
+                    <td><?= $product->has('supplier') ? $product->supplier->supplier_name : '' ?></td>
                     <td class="actions">
                         <?= $this->Html->link(__('Ver'), ['action' => 'view', $product->product_id]) ?>
                         <?= $this->Html->link(__('Editar'), ['action' => 'edit', $product->product_id]) ?>
@@ -49,44 +50,7 @@
             </tbody>
         </table>
     </div>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-            <div class="row">
     
-    <div class="column-responsive column-80">
-        <div class="products form content">
-            <?= $this->Form->create($product) ?>
-            <fieldset>
-                <legend><?= __('Add Product') ?></legend>
-                <?php
-                    echo $this->Form->control('product_img');
-                    echo $this->Form->control('product_description');
-                    echo $this->Form->control('product_price');
-                    echo $this->Form->control('product_stock');
-                    echo $this->Form->control('product_status');
-                    echo $this->Form->control('product_category_id', ['options' => $categories, 'empty' => true]);
-                    echo $this->Form->control('product_supplier_id', ['options' => $suppliers, 'empty' => true]);
-                ?>
-            </fieldset>
-            <?= $this->Form->button(__('Submit')) ?>
-            <?= $this->Form->end() ?>
-        </div>
-    </div>
-</div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-            </div>
-        </div>
-    </div>
     <div class="paginator">
         <ul class="pagination">
             <?= $this->Paginator->first('<< ' . __('first')) ?>
