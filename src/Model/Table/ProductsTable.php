@@ -79,13 +79,7 @@ class ProductsTable extends Table
         $validator
             ->scalar('product_img')
             ->maxLength('product_img', 255)
-            ->requirePresence('product_img', 'create')
-            ->notEmptyString('product_img');
-
-        $validator
-            ->scalar('product_img_dir')
-            ->maxLength('product_img_dir', 255)
-            ->allowEmptyString('product_img_dir');
+            ->requirePresence('product_img', 'create'); 
 
         $validator
             ->scalar('product_description')

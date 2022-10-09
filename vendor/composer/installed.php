@@ -3,13 +3,22 @@
         'name' => 'cakephp/app',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '4bda143fdb20705f1d175fe44335fdcd607cf4d0',
+        'reference' => 'defda6fd2e1143c0284cd9f7ac9ed35f54ec3baa',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
+        'avolle/cakephp-font-awesome' => array(
+            'pretty_version' => '1.1.1',
+            'version' => '1.1.1.0',
+            'reference' => '13d5e271ff68fdc651b0e279593693157d55cc3c',
+            'type' => 'cakephp-plugin',
+            'install_path' => __DIR__ . '/../avolle/cakephp-font-awesome',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'brick/varexporter' => array(
             'pretty_version' => '0.3.7',
             'version' => '0.3.7.0',
@@ -22,7 +31,7 @@
         'cakephp/app' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '4bda143fdb20705f1d175fe44335fdcd607cf4d0',
+            'reference' => 'defda6fd2e1143c0284cd9f7ac9ed35f54ec3baa',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

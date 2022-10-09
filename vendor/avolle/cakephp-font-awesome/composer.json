@@ -1,0 +1,61 @@
+{
+    "name": "avolle/cakephp-font-awesome",
+    "description": "FontAwesome plugin for CakePHP",
+    "homepage": "https://github.com/mentisy/cakephp-font-awesome",
+    "type": "cakephp-plugin",
+    "keywords": [
+        "cakephp",
+        "cakephp-plugin",
+        "FontAwesome"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexander Volle",
+            "homepage": "https://avolle.com",
+            "role": "Author"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/mentisy/cakephp-font-awesome/issues",
+        "source": "https://github.com/mentisy/cakephp-font-awesome"
+    },
+    "require": {
+        "php": ">=7.4",
+        "cakephp/cakephp": "^4.2"
+    },
+    "require-dev": {
+        "cakephp/cakephp-codesniffer": "^4.4",
+        "phpstan/phpstan": "^0.12.87",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Avolle\\FontAwesome\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Avolle\\FontAwesome\\Test\\": "tests/",
+            "Cake\\Test\\": "vendor/cakephp/cakephp/tests/"
+        }
+    },
+    "scripts": {
+        "check": [
+            "@test",
+            "@cs-check",
+            "@stan"
+        ],
+        "cs-check": "phpcs --colors -p  src/ tests/",
+        "cs-fix": "phpcbf --colors -p src/ tests/",
+        "stan": "phpstan analyse",
+        "test": "phpunit --colors=always"
+    },
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}

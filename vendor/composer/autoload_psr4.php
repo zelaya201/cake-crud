@@ -68,6 +68,7 @@ return array(
     'Brick\\VarExporter\\' => array($vendorDir . '/brick/varexporter/src'),
     'BootstrapUI\\' => array($vendorDir . '/friendsofcake/bootstrap-ui/src'),
     'Bake\\' => array($vendorDir . '/cakephp/bake/src'),
+    'Avolle\\FontAwesome\\' => array($vendorDir . '/avolle/cakephp-font-awesome/src'),
     'App\\Test\\' => array($baseDir . '/tests'),
     'App\\' => array($baseDir . '/src'),
 );
