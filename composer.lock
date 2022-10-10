@@ -4,8 +4,61 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "15e4faca3c8f8a54b710799d87bf5325",
+    "content-hash": "267116759860071e6e06a1f8f3b41213",
     "packages": [
+        {
+            "name": "avolle/cakephp-font-awesome",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mentisy/cakephp-font-awesome.git",
+                "reference": "13d5e271ff68fdc651b0e279593693157d55cc3c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mentisy/cakephp-font-awesome/zipball/13d5e271ff68fdc651b0e279593693157d55cc3c",
+                "reference": "13d5e271ff68fdc651b0e279593693157d55cc3c",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "^4.2",
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "cakephp/cakephp-codesniffer": "^4.4",
+                "phpstan/phpstan": "^0.12.87",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Avolle\\FontAwesome\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander Volle",
+                    "homepage": "https://avolle.com",
+                    "role": "Author"
+                }
+            ],
+            "description": "FontAwesome plugin for CakePHP",
+            "homepage": "https://github.com/mentisy/cakephp-font-awesome",
+            "keywords": [
+                "FontAwesome",
+                "cakephp",
+                "cakephp-plugin"
+            ],
+            "support": {
+                "issues": "https://github.com/mentisy/cakephp-font-awesome/issues",
+                "source": "https://github.com/mentisy/cakephp-font-awesome"
+            },
+            "time": "2022-07-30T14:59:07+00:00"
+        },
         {
             "name": "cakephp/cakephp",
             "version": "4.4.5",

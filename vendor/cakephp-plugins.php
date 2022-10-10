@@ -3,6 +3,7 @@ $baseDir = dirname(dirname(__FILE__));
 
 return [
     'plugins' => [
+        'Avolle/FontAwesome' => $baseDir . '/vendor/avolle/cakephp-font-awesome/',
         'Bake' => $baseDir . '/vendor/cakephp/bake/',
         'BootstrapUI' => $baseDir . '/vendor/friendsofcake/bootstrap-ui/',
         'Cake/TwigView' => $baseDir . '/vendor/cakephp/twig-view/',

@@ -7,14 +7,16 @@
  * @var \Cake\Collection\CollectionInterface|string[] $suppliers
  */
 include 'add.php';
+include 'edit.php';
 ?>
+<<<<<<< HEAD
 <div class="row">
     <div class="row">
         <div class="col-md-10">
             <h3><?= __('Productos') ?></h3>
         </div>
         <div class="col-md-2 text-end">
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createModal">
                 Nuevo Producto
             </button>
             
@@ -47,9 +49,7 @@ include 'add.php';
             </div>
         <?php endforeach; ?>
     </div>
-    
-    
-    
+
     <div class="paginator">
         <ul class="pagination">
             <?= $this->Paginator->first('<< ' . __('first')) ?>
@@ -60,4 +60,5 @@ include 'add.php';
         </ul>
         <p><?= $this->Paginator->counter(__('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')) ?></p>
     </div>
+
 </div>
