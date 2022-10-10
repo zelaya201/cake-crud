@@ -10,7 +10,7 @@ include 'add.php';
 include 'edit.php';
 ?>
 <script>
-        function editProductId(product_id) {
+        /* function editProductId(product_id) {
             event.preventDefault();
             parameters = {
                 'product_id': product_id
@@ -40,25 +40,6 @@ include 'edit.php';
             })
         }
 
-        /* function updateProduct() {
-            id = $('#id-edit').val();
-            description = $('#description-edit').val();
-            category = $('#category-edit').val();
-            price = $('#price-edit').val();
-            supplier = $('#supplier-edit').val();
-            stock = $('#stock-edit').val();
-            status = $('#status-edit').val();
-
-            parameters = {
-                'id': id,
-                'description': description,
-                'category': category,
-                ''
-            }
-
-            console.log(parameters)
-        } */
-
         $("#form-edit").on('submit',(function(e) {
             e.preventDefault();
 
@@ -87,10 +68,7 @@ include 'edit.php';
                 }
 
             })
-        }));
-
-        
-        
+        }));    */
 </script>
 
 <div class="products index content">
@@ -127,7 +105,6 @@ include 'edit.php';
                     <td><?= $product->has('supplier') ? $product->supplier->supplier_name : '' ?></td>
                     <td class="actions">
                         <?= $this->Html->link(__('Ver'), ['action' => 'view', $product->product_id]) ?>
-                        <!-- <?= $this->Html->link(__('Editar'), ['action' => 'edit', $product->product_id]) ?> -->
                         <?php echo('<a href="#"  data-bs-toggle="modal" data-bs-target="#editModal" onclick="editProductId(\'' . $product->product_id . '\')">
                                         Editar
                                     </a>'

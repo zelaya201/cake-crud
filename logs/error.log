@@ -27196,3 +27196,1937 @@ Stack Trace:
 
 Request URL: /products/view/31
 Referer URL: http://localhost:8765/products/view/31
+2022-10-09 09:09:04 error: [Cake\Controller\Exception\MissingActionException] Action ProductsController::img() could not be found, or is not accessible. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php on line 526
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'img',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:134
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /products/img/stock-in.png
+Referer URL: http://localhost:8765/products/view/31?page=2
+2022-10-09 09:09:36 error: [Cake\Http\Exception\MissingControllerException] Controller class Webroot could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /webroot/img/stock-in.png
+Referer URL: http://localhost:8765/products/view/31?page=2
+2022-10-09 09:10:22 error: [Cake\Http\Exception\MissingControllerException] Controller class Img could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /img/stock_in
+Referer URL: http://localhost:8765/products/view/31?page=2
+2022-10-09 09:10:51 error: [Cake\Http\Exception\MissingControllerException] Controller class Img could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /img/cake-logo
+Referer URL: http://localhost:8765/products/view/31?page=2
+2022-10-09 09:12:14 error: [Cake\Http\Exception\MissingControllerException] Controller class Img could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /img/stock_in.png
+Referer URL: http://localhost:8765/products/view/31?page=2
+2022-10-09 09:12:34 error: [Cake\Http\Exception\MissingControllerException] Controller class Img could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /img/stock-in
+Referer URL: http://localhost:8765/products/view/31?page=2
+2022-10-09 16:15:40 warning: Undefined variable $categories
+Request URL: /products/view/31
+Referer URL: http://localhost:8765/products
+Trace:
+include C:\xampp\htdocs\cake-crud\templates\Products\edit.php, line 32
+include C:\xampp\htdocs\cake-crud\templates\Products\view.php, line 11
+Cake\View\View::_evaluate() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Controller\Controller::invokeAction() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\xampp\htdocs\cake-crud\webroot\index.php, line 40
+
+2022-10-09 16:15:40 warning: Undefined variable $suppliers
+Request URL: /products/view/31
+Referer URL: http://localhost:8765/products
+Trace:
+include C:\xampp\htdocs\cake-crud\templates\Products\edit.php, line 33
+include C:\xampp\htdocs\cake-crud\templates\Products\view.php, line 11
+Cake\View\View::_evaluate() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Controller\Controller::invokeAction() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\xampp\htdocs\cake-crud\webroot\index.php, line 40
+
+2022-10-09 16:15:40 warning: Undefined variable $categories
+Request URL: /products/view/31
+Referer URL: http://localhost:8765/products
+Trace:
+include C:\xampp\htdocs\cake-crud\templates\Products\edit.php, line 69
+include C:\xampp\htdocs\cake-crud\templates\Products\view.php, line 11
+Cake\View\View::_evaluate() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Controller\Controller::invokeAction() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\xampp\htdocs\cake-crud\webroot\index.php, line 40
+
+2022-10-09 16:15:40 warning: Undefined variable $suppliers
+Request URL: /products/view/31
+Referer URL: http://localhost:8765/products
+Trace:
+include C:\xampp\htdocs\cake-crud\templates\Products\edit.php, line 86
+include C:\xampp\htdocs\cake-crud\templates\Products\view.php, line 11
+Cake\View\View::_evaluate() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Controller\Controller::invokeAction() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\xampp\htdocs\cake-crud\webroot\index.php, line 40
+
+2022-10-09 17:22:01 warning: Undefined array key "description-edit"
+Request URL: /products/edit/31
+Referer URL: http://localhost:8765/products/view/31
+Trace:
+App\Controller\ProductsController::edit() C:\xampp\htdocs\cake-crud\src\Controller\ProductsController.php, line 152
+Cake\Controller\Controller::invokeAction() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\xampp\htdocs\cake-crud\webroot\index.php, line 40
+
+2022-10-09 17:22:01 warning: Undefined array key "category-edit"
+Request URL: /products/edit/31
+Referer URL: http://localhost:8765/products/view/31
+Trace:
+App\Controller\ProductsController::edit() C:\xampp\htdocs\cake-crud\src\Controller\ProductsController.php, line 153
+Cake\Controller\Controller::invokeAction() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\xampp\htdocs\cake-crud\webroot\index.php, line 40
+
+2022-10-09 17:22:01 warning: Undefined array key "supplier-edit"
+Request URL: /products/edit/31
+Referer URL: http://localhost:8765/products/view/31
+Trace:
+App\Controller\ProductsController::edit() C:\xampp\htdocs\cake-crud\src\Controller\ProductsController.php, line 154
+Cake\Controller\Controller::invokeAction() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\xampp\htdocs\cake-crud\webroot\index.php, line 40
+
+2022-10-09 17:22:01 warning: Undefined array key "price-edit"
+Request URL: /products/edit/31
+Referer URL: http://localhost:8765/products/view/31
+Trace:
+App\Controller\ProductsController::edit() C:\xampp\htdocs\cake-crud\src\Controller\ProductsController.php, line 155
+Cake\Controller\Controller::invokeAction() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\xampp\htdocs\cake-crud\webroot\index.php, line 40
+
+2022-10-09 17:22:01 error: [TypeError] Cake\Http\Session::_overwrite(): Argument #1 ($old) must be of type array, null given, called in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Session.php on line 508 in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Session.php on line 555
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Session.php:508
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\FlashMessage.php:122
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Component\FlashComponent.php:76
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Component\FlashComponent.php:184
+- C:\xampp\htdocs\cake-crud\src\Controller\ProductsController.php:158
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php:547
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:162
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /products/edit/31
+Referer URL: http://localhost:8765/products/view/31
+2022-10-09 17:22:02 warning: Unable to emit headers. Headers sent in file=C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Renderer\HtmlErrorRenderer.php line=36
+Request URL: /products/edit/31
+Referer URL: http://localhost:8765/products/view/31
+Trace:
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\cake-crud\webroot\index.php, line 40
+
+2022-10-09 17:22:02 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Renderer\HtmlErrorRenderer.php:36)
+Request URL: /products/edit/31
+Referer URL: http://localhost:8765/products/view/31
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\cake-crud\webroot\index.php, line 40
+
+2022-10-09 17:22:02 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Renderer\HtmlErrorRenderer.php:36)
+Request URL: /products/edit/31
+Referer URL: http://localhost:8765/products/view/31
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\cake-crud\webroot\index.php, line 40
+
+2022-10-09 17:22:02 warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Renderer\HtmlErrorRenderer.php:36)
+Request URL: /products/edit/31
+Referer URL: http://localhost:8765/products/view/31
+Trace:
+header [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 128
+[main] C:\xampp\htdocs\cake-crud\webroot\index.php, line 40
+
+2022-10-09 17:23:05 warning: Undefined variable $product
+Request URL: /products/edit/31
+Referer URL: http://localhost:8765/products/view/31
+Trace:
+include C:\xampp\htdocs\cake-crud\templates\Products\edit.php, line 20
+Cake\View\View::_evaluate() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Controller\Controller::invokeAction() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\xampp\htdocs\cake-crud\webroot\index.php, line 40
+
+2022-10-09 17:23:05 warning: Undefined variable $product
+Request URL: /products/edit/31
+Referer URL: http://localhost:8765/products/view/31
+Trace:
+include C:\xampp\htdocs\cake-crud\templates\Products\edit.php, line 20
+Cake\View\View::_evaluate() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Controller\Controller::invokeAction() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\xampp\htdocs\cake-crud\webroot\index.php, line 40
+
+2022-10-09 17:23:05 warning: Attempt to read property "product_id" on null
+Request URL: /products/edit/31
+Referer URL: http://localhost:8765/products/view/31
+Trace:
+include C:\xampp\htdocs\cake-crud\templates\Products\edit.php, line 20
+Cake\View\View::_evaluate() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Controller\Controller::invokeAction() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\xampp\htdocs\cake-crud\webroot\index.php, line 40
+
+2022-10-09 17:23:05 warning: Undefined variable $categories
+Request URL: /products/edit/31
+Referer URL: http://localhost:8765/products/view/31
+Trace:
+include C:\xampp\htdocs\cake-crud\templates\Products\edit.php, line 37
+Cake\View\View::_evaluate() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Controller\Controller::invokeAction() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\xampp\htdocs\cake-crud\webroot\index.php, line 40
+
+2022-10-09 17:23:05 warning: Undefined variable $suppliers
+Request URL: /products/edit/31
+Referer URL: http://localhost:8765/products/view/31
+Trace:
+include C:\xampp\htdocs\cake-crud\templates\Products\edit.php, line 54
+Cake\View\View::_evaluate() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+Cake\Controller\Controller::invokeAction() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php, line 556
+Cake\Controller\ControllerFactory::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 77
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php, line 58
+Cake\Http\Server::run() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\xampp\htdocs\cake-crud\webroot\index.php, line 40
+
+2022-10-09 17:39:11 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/30
+2022-10-09 18:52:41 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/28
+2022-10-09 18:53:46 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/28
+2022-10-09 18:54:16 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/28
+2022-10-09 18:54:58 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/28
+2022-10-09 18:55:17 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/28
+2022-10-09 18:55:48 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/28
+2022-10-09 18:56:21 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/28
+2022-10-09 18:56:39 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/28
+2022-10-09 18:57:04 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/28
+2022-10-09 18:57:15 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/28
+2022-10-09 18:58:09 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/28
+2022-10-09 18:58:24 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/28
+2022-10-09 18:58:32 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/28
+2022-10-09 18:58:38 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/28
+2022-10-09 18:58:49 error: [Cake\Http\Exception\MethodNotAllowedException] Method Not Allowed in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\ServerRequest.php on line 1492
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\src\Controller\ProductsController.php:219
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php:547
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:162
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /products/delete/28
+Referer URL: http://localhost:8765/products/view/28
+2022-10-09 19:04:44 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/28
+2022-10-09 19:04:48 error: [Cake\Http\Exception\MethodNotAllowedException] Method Not Allowed in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\ServerRequest.php on line 1492
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\src\Controller\ProductsController.php:219
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php:547
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:162
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /products/delete/28
+Referer URL: http://localhost:8765/products/view/28
+2022-10-09 19:32:25 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/30
+2022-10-09 19:33:08 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/30
+2022-10-09 19:40:56 error: [Error] Object of class BootstrapUI\View\Helper\FormHelper could not be converted to string in C:\xampp\htdocs\cake-crud\templates\Products\view.php on line 122
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\View\View.php:1220
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\View\View.php:1177
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\View\View.php:808
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php:773
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php:556
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /products/view/30
+Referer URL: http://localhost:8765/products
+2022-10-09 19:42:02 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/30
+2022-10-09 19:42:33 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/30
+2022-10-10 00:41:33 error: [Cake\Database\Exception\MissingConnectionException] Connection to Mysql could not be established: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Database\Driver.php on line 133
+Exception Attributes: array (
+  'driver' => 'Mysql',
+  'reason' => 'SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión',
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:164
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Database\Schema\SchemaDialect.php:51
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:216
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:53
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Database\Connection.php:417
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\ORM\Table.php:512
+- C:\xampp\htdocs\cake-crud\vendor\davidyell\proffer\src\Model\Behavior\ProfferBehavior.php:40
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\ORM\Behavior.php:167
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\ORM\BehaviorRegistry.php:145
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php:110
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\ORM\Table.php:778
+- C:\xampp\htdocs\cake-crud\src\Model\Table\ProductsTable.php:66
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\ORM\Table.php:322
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php:307
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php:262
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Datasource\Locator\AbstractLocator.php:68
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php:205
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Datasource\ModelAwareTrait.php:128
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php:323
+- C:\xampp\htdocs\cake-crud\src\Controller\ProductsController.php:63
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php:547
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:164
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Caused by: [PDOException] SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Database\Driver.php on line 125
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Database\Driver.php:125
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:70
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Database\Driver.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:164
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Database\Schema\SchemaDialect.php:51
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:216
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:53
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Database\Connection.php:417
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\ORM\Table.php:512
+- C:\xampp\htdocs\cake-crud\vendor\davidyell\proffer\src\Model\Behavior\ProfferBehavior.php:40
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\ORM\Behavior.php:167
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\ORM\BehaviorRegistry.php:145
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php:110
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\ORM\Table.php:778
+- C:\xampp\htdocs\cake-crud\src\Model\Table\ProductsTable.php:66
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\ORM\Table.php:322
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php:307
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php:262
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Datasource\Locator\AbstractLocator.php:68
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php:205
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Datasource\ModelAwareTrait.php:128
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php:323
+- C:\xampp\htdocs\cake-crud\src\Controller\ProductsController.php:63
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php:547
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:164
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /products
+2022-10-10 00:41:39 error: [Cake\Database\Exception\MissingConnectionException] Connection to Mysql could not be established: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Database\Driver.php on line 133
+Exception Attributes: array (
+  'driver' => 'Mysql',
+  'reason' => 'SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión',
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:164
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Database\Schema\SchemaDialect.php:51
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:216
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:53
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Database\Connection.php:417
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\ORM\Table.php:512
+- C:\xampp\htdocs\cake-crud\vendor\davidyell\proffer\src\Model\Behavior\ProfferBehavior.php:40
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\ORM\Behavior.php:167
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\ORM\BehaviorRegistry.php:145
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php:110
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\ORM\Table.php:778
+- C:\xampp\htdocs\cake-crud\src\Model\Table\ProductsTable.php:66
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\ORM\Table.php:322
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php:307
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php:262
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Datasource\Locator\AbstractLocator.php:68
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php:205
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Datasource\ModelAwareTrait.php:128
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php:323
+- C:\xampp\htdocs\cake-crud\src\Controller\ProductsController.php:63
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php:547
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:164
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Caused by: [PDOException] SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Database\Driver.php on line 125
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Database\Driver.php:125
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:70
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Database\Driver.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:164
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Database\Schema\SchemaDialect.php:51
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:216
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:53
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Database\Connection.php:417
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\ORM\Table.php:512
+- C:\xampp\htdocs\cake-crud\vendor\davidyell\proffer\src\Model\Behavior\ProfferBehavior.php:40
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\ORM\Behavior.php:167
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\ORM\BehaviorRegistry.php:145
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php:110
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\ORM\Table.php:778
+- C:\xampp\htdocs\cake-crud\src\Model\Table\ProductsTable.php:66
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\ORM\Table.php:322
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php:307
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php:262
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Datasource\Locator\AbstractLocator.php:68
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php:205
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Datasource\ModelAwareTrait.php:128
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php:323
+- C:\xampp\htdocs\cake-crud\src\Controller\ProductsController.php:63
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\Controller.php:547
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:139
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:114
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:320
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:164
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /products
+2022-10-10 00:44:20 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/28
+2022-10-10 00:44:48 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/28
+2022-10-10 00:44:57 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/28
+2022-10-10 00:45:07 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/28
+2022-10-10 00:45:17 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/28
+2022-10-10 00:46:53 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/28
+2022-10-10 00:48:04 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/28
+2022-10-10 00:56:30 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/28
+2022-10-10 00:58:34 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/28
+2022-10-10 01:02:16 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/28
+2022-10-10 01:03:16 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/28
+2022-10-10 01:03:54 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/28
+2022-10-10 01:04:11 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/28
+2022-10-10 01:04:35 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/28
+2022-10-10 01:05:07 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/28
+2022-10-10 01:10:41 error: [Cake\Http\Exception\MissingControllerException] Controller class Files could not be found. in C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 348
+Exception Attributes: array (
+  'class' => 'Files',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:74
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\BaseApplication.php:318
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:174
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:157
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:186
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:131
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\cake-crud\webroot\index.php:40
+
+Request URL: /files/products/product_img/encuesta.png
+Referer URL: http://localhost:8765/products/view/28

@@ -95,7 +95,10 @@ class ProductsController extends AppController
             'contain' => ['Categories', 'Suppliers'],
         ]);
 
-        $this->set(compact('record', 'records', 'product'));
+        $categories = $this->Products->Categories->find('list', ['limit' => 200])->all();
+        $suppliers = $this->Products->Suppliers->find('list', ['limit' => 200])->all();
+
+        $this->set(compact('record', 'records', 'product', 'categories', 'suppliers'));
     }
 
     /**
@@ -138,8 +141,29 @@ class ProductsController extends AppController
      */
     public function edit($id = null)
     {
+        $product = $this->Products->get($id, [
+            'contain' => [],
+        ]);
 
-        $product = $this->Products->newEmptyEntity();
+
+        if ($this->request->is(['patch', 'post', 'put'])) {
+            $formData = $this->request->getData();
+
+            $product->product_description = $formData['product_description'];
+            $product->product_category_id = $formData['product_category_id'];
+            $product->product_supplier_id = $formData['product_supplier_id'];
+            $product->product_price = $formData['product_price'];
+            
+            if ($this->Products->save($product)) {
+                $this->Flash->success(__('The product has been saved.'));
+
+                return $this->redirect(['action' => 'view', $product->product_id]);
+            }
+            $this->Flash->error(__('The product could not be saved. Please, try again.'));
+        }
+
+        $this->set(compact('product'));
+        /* $product = $this->Products->newEmptyEntity();
 
         $formData = $this->request->getData();
         
@@ -168,7 +192,7 @@ class ProductsController extends AppController
                 return;
             }
             $this->Flash->error(__('The product could not be saved. Please, try again.'));
-        }else {
+        } *//* else {
             /* $product = $this->Products->newEmptyEntity();        
 
             $product = $this->Products->get($id, [
@@ -178,7 +202,7 @@ class ProductsController extends AppController
             $categories = $this->Products->Categories->find('list', ['limit' => 200])->all();
             $suppliers = $this->Products->Suppliers->find('list', ['limit' => 200])->all();
             $this->set(compact('product', 'categories', 'suppliers')); */
-        }
+        /*} */
 
         
     }
