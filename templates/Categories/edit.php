@@ -9,7 +9,7 @@
         <div class="side-nav">
             <h4 class="heading"><?= __('Actions') ?></h4>
             <?= $this->Form->postLink(
-                __('Delete'),
+                __('Eliminar'),
                 ['action' => 'delete', $category->category_id],
                 ['confirm' => __('Are you sure you want to delete # {0}?', $category->category_id), 'class' => 'side-nav-item']
             ) ?>

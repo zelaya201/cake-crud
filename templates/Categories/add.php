@@ -7,20 +7,20 @@
 <div class="row">
     <aside class="column">
         <div class="side-nav">
-            <h4 class="heading"><?= __('Actions') ?></h4>
-            <?= $this->Html->link(__('List Categories'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
+            
+            <?= $this->Html->link(__('Lista de categorias'), ['action' => 'index'], ['class' => 'btn btn-primary']) ?>
         </div>
     </aside>
     <div class="column-responsive column-80">
         <div class="categories form content">
             <?= $this->Form->create($category) ?>
             <fieldset>
-                <legend><?= __('Add Category') ?></legend>
+                <legend><?= __('Agregar categoria') ?></legend>
                 <?php
                     echo $this->Form->control('category_name');
                 ?>
             </fieldset>
-            <?= $this->Form->button(__('Submit')) ?>
+            <?= $this->Form->button(__('Realizado'), ['class' => 'btn btn-success']) ?>
             <?= $this->Form->end() ?>
         </div>
     </div>

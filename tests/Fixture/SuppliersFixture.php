@@ -21,6 +21,9 @@ class SuppliersFixture extends TestFixture
             [
                 'supplier_id' => 1,
                 'supplier_name' => 'Lorem ipsum dolor sit amet',
+                'supplier_address' => 'Lorem ipsum dolor sit amet',
+                'supplier_phone' => 'Lorem ipsum d',
+                'supplier_email' => 'Lorem ipsum dolor sit amet',
             ],
         ];
         parent::init();

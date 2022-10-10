@@ -49,10 +49,22 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             <!-- <a href="/Views/Index" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"> -->
             
             <ul class="nav nav-pills">
+                
                 <li class="nav-item">
                     <?= $this->Html->link('Inventario', 
                                     ['controller' => 'Products', 'action' => 'index'],
                                     ['class' => 'nav-link active']) ?>
+                </li>
+                            
+                <li class="nav-item">
+                <?= $this->Html->link('Proveedores', 
+                                    ['controller' => 'Suppliers', 'action' => 'index'],
+                                    ['class' => 'nav-link']) ?>
+                </li>
+                <li class="nav-item">
+                <?= $this->Html->link('Categorías', 
+                                    ['controller' => 'Categories', 'action' => 'index'],
+                                    ['class' => 'nav-link']) ?>
                 </li>
             </ul>
             </header>
