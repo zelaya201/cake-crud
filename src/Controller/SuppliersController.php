@@ -18,9 +18,11 @@ class SuppliersController extends AppController
      */
     public function index()
     {
+        $supplier = $this->Suppliers->newEmptyEntity();
         $suppliers = $this->paginate($this->Suppliers);
 
-        $this->set(compact('suppliers'));
+        
+        $this->set(compact('suppliers','supplier'));
     }
 
     /**
@@ -48,13 +50,22 @@ class SuppliersController extends AppController
     {
         $supplier = $this->Suppliers->newEmptyEntity();
         if ($this->request->is('post')) {
-            $supplier = $this->Suppliers->patchEntity($supplier, $this->request->getData());
+            $formData = $this->request->getData();
+            
+            $supplier->supplier_name = $formData['name'];
+            $supplier->supplier_address = $formData['address'];
+            $supplier->supplier_phone = $formData['phone'];
+            $supplier->supplier_email = $formData['email'];
+
+            /* $supplier = $this->Suppliers->patchEntity($supplier, $this->request->getData()); */
             if ($this->Suppliers->save($supplier)) {
-                $this->Flash->success(__('The supplier has been saved.'));
+                $this->Flash->success(__('El proveedor se ha guardado con éxito.'));
 
                 return $this->redirect(['action' => 'index']);
+            }else {
+                $this->Flash->error(__('El proveedor no se ha podido guardar. Por favor, intentelo de nuevo.'));
+                return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The supplier could not be saved. Please, try again.'));
         }
         $this->set(compact('supplier'));
     }
@@ -68,19 +79,42 @@ class SuppliersController extends AppController
      */
     public function edit($id = null)
     {
+        
+        if ($this->request->is(['patch', 'post', 'put'])) {
+            $formData = $this->request->getData();
+            $supplier = $this->Suppliers->get($formData['id'], [
+            'contain' => [],
+            ]);
+
+            $supplier->supplier_name = $formData['supplier-name'];
+            $supplier->supplier_address = $formData['supplier-address'];
+            $supplier->supplier_phone = $formData['supplier-phone'];
+            $supplier->supplier_email = $formData['supplier-email'];
+
+            if ($this->Suppliers->save($supplier)) {
+                $this->Flash->success(__('El proveedor ha sido modificado con éxito.'));
+
+                return $this->redirect(['action' => 'index']);
+            } else {
+                
+                $this->Flash->error(__('El proveedor no se ha podido modificar. Por favor, intentelo de nuevo.'));
+                return $this->redirect(['action' => 'index']);
+            }
+            
+        }
+        $this->set(compact('supplier'));
+    }
+
+
+    public function findSupplierById($id = null) {
+        if ($this->request->is('get')){
+            $id = $this->request->getData('supplier_id');
+        }
         $supplier = $this->Suppliers->get($id, [
             'contain' => [],
         ]);
-        if ($this->request->is(['patch', 'post', 'put'])) {
-            $supplier = $this->Suppliers->patchEntity($supplier, $this->request->getData());
-            if ($this->Suppliers->save($supplier)) {
-                $this->Flash->success(__('The supplier has been saved.'));
 
-                return $this->redirect(['action' => 'index']);
-            }
-            $this->Flash->error(__('The supplier could not be saved. Please, try again.'));
-        }
-        $this->set(compact('supplier'));
+        exit (json_encode($supplier));
     }
 
     /**
@@ -95,11 +129,13 @@ class SuppliersController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $supplier = $this->Suppliers->get($id);
         if ($this->Suppliers->delete($supplier)) {
-            $this->Flash->success(__('The supplier has been deleted.'));
+            $this->Flash->success(__('El proveedor has sido eliminado correctamente.'));
+            return $this->redirect(['action' => 'index']);
         } else {
-            $this->Flash->error(__('The supplier could not be deleted. Please, try again.'));
+            $this->Flash->error(__('El proveedor no se ha podido eliminar. Por favor, intentelo otra vez.'));
+            return $this->redirect(['action' => 'index']);
         }
-
+        exit(json_encode($supplier));
         return $this->redirect(['action' => 'index']);
     }
 }

@@ -2,6 +2,8 @@
 /**
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Supplier $supplier
+ * @var \App\Model\Entity\Record $record
+ * @var iterable<\App\Model\Entity\Record> $records
  */
 ?>
 <div class="row">

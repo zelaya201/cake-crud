@@ -123,12 +123,12 @@ class ProductsController extends AppController
             //$product = $this->Products->patchEntity($product, $this->request->getData());
 
             if ($this->Products->save($product)) {
-                $this->Flash->success(__('The product has been saved.'));
+                $this->Flash->success(__('El producto se ha guardado con exito.'));
 
                 return $this->redirect(['action' => 'index']);
             }
 
-            $this->Flash->error(__('The product could not be saved. Please, try again.'));
+            $this->Flash->error(__('El producto no se pudo guardar. Por favor, vuelva a intentar.'));
         }
     }
 
@@ -163,48 +163,6 @@ class ProductsController extends AppController
         }
 
         $this->set(compact('product'));
-        /* $product = $this->Products->newEmptyEntity();
-
-        $formData = $this->request->getData();
-        
-        $id = $formData['id-edit'];
-
-        if ($this->request->is(['patch', 'post', 'put'])) {
-
-            $product = $this->Products->get($id, [
-                'contain' => [],
-            ]);
-            
-            $product->product_description = $formData['description-edit'];
-            $product->product_category_id = $formData['category-edit'];
-            $product->product_supplier_id = $formData['supplier-edit'];
-            $product->product_img = $formData['img-edit'];
-            $product->product_price = $formData['price-edit'];
-            $product->product_stock = $formData['stock-edit'];
-            $product->product_status = $formData['status-edit'];
-            //$product = $this->Products->patchEntity($product, $formData);
-
-            //exit(json_encode($product));
-            
-            if ($this->Products->save($product)) {
-                $this->Flash->success(__('The product has been saved.'));
-
-                return;
-            }
-            $this->Flash->error(__('The product could not be saved. Please, try again.'));
-        } *//* else {
-            /* $product = $this->Products->newEmptyEntity();        
-
-            $product = $this->Products->get($id, [
-                'contain' => [],
-            ]);
-
-            $categories = $this->Products->Categories->find('list', ['limit' => 200])->all();
-            $suppliers = $this->Products->Suppliers->find('list', ['limit' => 200])->all();
-            $this->set(compact('product', 'categories', 'suppliers')); */
-        /*} */
-
-        
     }
 
     /**
@@ -225,5 +183,24 @@ class ProductsController extends AppController
         }
 
         return $this->redirect(['action' => 'index']);
+    }
+
+    public function search()
+    {
+
+        $this->request->allowMethod('ajax');
+   
+        $keyword = $this->request->getData('keyword');
+
+        
+
+        $query = $this->Products->find('all',[
+              'conditions' => ['product_description LIKE'=>'%'.$keyword.'%'],
+              'order' => ['Products.product_id'=>'DESC']
+        ]);
+
+        $this->set('products', $this->paginate($query));
+        $this->set('_serialize', ['products']); 
+
     }
 }

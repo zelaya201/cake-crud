@@ -26,6 +26,11 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <?= $cakeDescription ?>:
         <?= $this->fetch('title') ?>
     </title>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js" 
+    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" 
+    crossorigin="anonymous"></script>
+
     <?= $this->Html->meta('icon') ?>
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
