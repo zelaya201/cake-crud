@@ -1,0 +1,34 @@
+2022-10-10 09:14:51 notice: Required parameter $quantity follows optional parameter $id
+Trace:
+include C:\xampp\htdocs\cake-crud\vendor\composer\ClassLoader.php, line 571
+Composer\Autoload\includeFile C:\xampp\htdocs\cake-crud\vendor\composer\ClassLoader.php, line 571
+Composer\Autoload\ClassLoader::loadClass() C:\xampp\htdocs\cake-crud\vendor\composer\ClassLoader.php, line 428
+class_exists [internal], line ??
+Bake\Command\TestCommand::bake() C:\xampp\htdocs\cake-crud\vendor\cakephp\bake\src\Command\TestCommand.php, line 253
+Bake\Command\TestCommand::execute() C:\xampp\htdocs\cake-crud\vendor\cakephp\bake\src\Command\TestCommand.php, line 130
+Bake\Command\ControllerCommand::bakeTest() C:\xampp\htdocs\cake-crud\vendor\cakephp\bake\src\Command\ControllerCommand.php, line 207
+Bake\Command\ControllerCommand::bake() C:\xampp\htdocs\cake-crud\vendor\cakephp\bake\src\Command\ControllerCommand.php, line 154
+Bake\Command\ControllerCommand::execute() C:\xampp\htdocs\cake-crud\vendor\cakephp\bake\src\Command\ControllerCommand.php, line 64
+Bake\Command\AllCommand::execute() C:\xampp\htdocs\cake-crud\vendor\cakephp\bake\src\Command\AllCommand.php, line 115
+Cake\Console\BaseCommand::run() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Console\BaseCommand.php, line 189
+Cake\Console\CommandRunner::runCommand() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Console\CommandRunner.php, line 334
+Cake\Console\CommandRunner::run() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Console\CommandRunner.php, line 172
+[main] C:\xampp\htdocs\cake-crud\bin\cake.php, line 12
+
+2022-10-10 09:14:51 notice: Required parameter $action follows optional parameter $id
+Trace:
+include C:\xampp\htdocs\cake-crud\vendor\composer\ClassLoader.php, line 571
+Composer\Autoload\includeFile C:\xampp\htdocs\cake-crud\vendor\composer\ClassLoader.php, line 571
+Composer\Autoload\ClassLoader::loadClass() C:\xampp\htdocs\cake-crud\vendor\composer\ClassLoader.php, line 428
+class_exists [internal], line ??
+Bake\Command\TestCommand::bake() C:\xampp\htdocs\cake-crud\vendor\cakephp\bake\src\Command\TestCommand.php, line 253
+Bake\Command\TestCommand::execute() C:\xampp\htdocs\cake-crud\vendor\cakephp\bake\src\Command\TestCommand.php, line 130
+Bake\Command\ControllerCommand::bakeTest() C:\xampp\htdocs\cake-crud\vendor\cakephp\bake\src\Command\ControllerCommand.php, line 207
+Bake\Command\ControllerCommand::bake() C:\xampp\htdocs\cake-crud\vendor\cakephp\bake\src\Command\ControllerCommand.php, line 154
+Bake\Command\ControllerCommand::execute() C:\xampp\htdocs\cake-crud\vendor\cakephp\bake\src\Command\ControllerCommand.php, line 64
+Bake\Command\AllCommand::execute() C:\xampp\htdocs\cake-crud\vendor\cakephp\bake\src\Command\AllCommand.php, line 115
+Cake\Console\BaseCommand::run() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Console\BaseCommand.php, line 189
+Cake\Console\CommandRunner::runCommand() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Console\CommandRunner.php, line 334
+Cake\Console\CommandRunner::run() C:\xampp\htdocs\cake-crud\vendor\cakephp\cakephp\src\Console\CommandRunner.php, line 172
+[main] C:\xampp\htdocs\cake-crud\bin\cake.php, line 12
+

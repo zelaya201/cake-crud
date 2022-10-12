@@ -28,6 +28,28 @@ class ProductsControllerTest extends TestCase
     ];
 
     /**
+     * Test findProductById method
+     *
+     * @return void
+     * @uses \App\Controller\ProductsController::findProductById()
+     */
+    public function testFindProductById(): void
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test movingStock method
+     *
+     * @return void
+     * @uses \App\Controller\ProductsController::movingStock()
+     */
+    public function testMovingStock(): void
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
      * Test index method
      *
      * @return void
@@ -50,6 +72,17 @@ class ProductsControllerTest extends TestCase
     }
 
     /**
+     * Test paginateByProductRecord method
+     *
+     * @return void
+     * @uses \App\Controller\ProductsController::paginateByProductRecord()
+     */
+    public function testPaginateByProductRecord(): void
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
      * Test add method
      *
      * @return void
@@ -67,6 +100,17 @@ class ProductsControllerTest extends TestCase
      * @uses \App\Controller\ProductsController::edit()
      */
     public function testEdit(): void
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test editImage method
+     *
+     * @return void
+     * @uses \App\Controller\ProductsController::editImage()
+     */
+    public function testEditImage(): void
     {
         $this->markTestIncomplete('Not implemented yet.');
     }

@@ -34,11 +34,10 @@ class Product extends Entity
      */
     protected $_accessible = [
         'product_img' => true,
-        'product_img_dir' => false,
+        'product_img_dir' => true,
         'product_description' => true,
         'product_price' => true,
         'product_stock' => true,
-        'product_status' => true,
         'product_category_id' => true,
         'product_supplier_id' => true,
         'category' => true,

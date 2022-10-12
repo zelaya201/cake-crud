@@ -59,7 +59,7 @@ class ProductsTable extends Table
                     'square' => [	// Define the prefix of your thumbnail
                         'w' => 300,	// Width
                         'h' => 300,	// Height
-                        'crop' => true,
+                        'fit' => true,
                         'jpeg_quality'	=> 100
                     ],
                 ],
@@ -74,7 +74,7 @@ class ProductsTable extends Table
      * @param \Cake\Validation\Validator $validator Validator instance.
      * @return \Cake\Validation\Validator
      */
-    public function validationDefault(Validator $validator): Validator
+    /* public function validationDefault(Validator $validator): Validator
     {
         $validator
             ->scalar('product_img')
@@ -85,7 +85,7 @@ class ProductsTable extends Table
             ->scalar('product_description')
             ->maxLength('product_description', 255)
             ->requirePresence('product_description', 'create')
-            ->notEmptyString('product_description');
+            ->notEmptyString('product_description', 'Por favor rellene este campo');
 
         $validator
             ->numeric('product_price')
@@ -98,11 +98,6 @@ class ProductsTable extends Table
             ->notEmptyString('product_stock');
 
         $validator
-            ->integer('product_status')
-            ->requirePresence('product_status', 'create')
-            ->notEmptyString('product_status');
-
-        $validator
             ->integer('product_category_id')
             ->allowEmptyString('product_category_id');
 
@@ -111,7 +106,7 @@ class ProductsTable extends Table
             ->allowEmptyString('product_supplier_id');
 
         return $validator;
-    }
+    } */
 
     /**
      * Returns a rules checker object that will be used for validating

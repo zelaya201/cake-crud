@@ -16,7 +16,7 @@ class ProductsController extends AppController
      * Index method
      *
      * @return \Cake\Http\Response|null|void Renders view
-     */
+     */ 
 
     public function findProductById() {
         $id = $this->request->getData('product_id');
@@ -50,13 +50,9 @@ class ProductsController extends AppController
         }else {
             return false;
         }
-
-        //exit (json_encode($product->product_stock));
-
     }
 
-    public function index()
-    {
+    public function index() {
         $this->paginate = [
             'contain' => ['Categories', 'Suppliers'],
         ];
@@ -68,7 +64,6 @@ class ProductsController extends AppController
         $suppliers = $this->Products->Suppliers->find('list', ['limit' => 200])->all();
 
         $this->set(compact('product', 'products', 'categories', 'suppliers'));
-        //$this->set(compact('products'));
     }
 
     /**
@@ -78,17 +73,14 @@ class ProductsController extends AppController
      * @return \Cake\Http\Response|null|void Renders view
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
-    public function view($id = null)
-    {
+    public function view($id = null) {
         $this->loadModel('Records'); //Se carga el modelo de Records
 
         /* Se limita el tamaño de la paginación */
-        $this->paginate = [
-            'limit' => 8,
-        ];
 
         $record = $this->Records->newEmptyEntity(); //Se setea el nuevo objeto
-        $records = $this->paginate($this->Records); //Se traen todos los registros de records
+        $records = $this->paginate($this->Records->find('all', ['conditions' => ['Records.record_product_id' => $id]]), 
+                            ['limit' => 8]); //Se traen todos los registros de records
 
 
         $product = $this->Products->get($id, [
@@ -106,8 +98,7 @@ class ProductsController extends AppController
      *
      * @return \Cake\Http\Response|null|void Redirects on successful add, renders view otherwise.
      */
-    public function add()
-    {
+    public function add() {
         $product = $this->Products->newEmptyEntity();
                                           
         if ($this->request->is('post')) {
@@ -118,17 +109,18 @@ class ProductsController extends AppController
             $product->product_img = $formData['img'];
             $product->product_description = $formData['description'];
             $product->product_price = $formData['price'];
-            $product->product_stock = $formData['stock'];
-            $product->product_status = $formData['status'];
-            //$product = $this->Products->patchEntity($product, $this->request->getData());
+            $product->product_stock = 0;
 
             if ($this->Products->save($product)) {
-                $this->Flash->success(__('The product has been saved.'));
+                $this->Flash->success(__('El producto ha sido agregado con éxito.'));
+
+                return $this->redirect(['action' => 'index']);
+            }else {
+                $this->Flash->error(__('El producto no se ha podido agregar correctamente. Por favor, intente de nuevo.'));
 
                 return $this->redirect(['action' => 'index']);
             }
 
-            $this->Flash->error(__('The product could not be saved. Please, try again.'));
         }
     }
 
@@ -139,12 +131,10 @@ class ProductsController extends AppController
      * @return \Cake\Http\Response|null|void Redirects on successful edit, renders view otherwise.
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
-    public function edit($id = null)
-    {
+    public function edit($id = null) {
         $product = $this->Products->get($id, [
             'contain' => [],
         ]);
-
 
         if ($this->request->is(['patch', 'post', 'put'])) {
             $formData = $this->request->getData();
@@ -155,56 +145,45 @@ class ProductsController extends AppController
             $product->product_price = $formData['product_price'];
             
             if ($this->Products->save($product)) {
-                $this->Flash->success(__('The product has been saved.'));
+                $this->Flash->success(__('El producto ha sido modificado con éxito.'));
 
                 return $this->redirect(['action' => 'view', $product->product_id]);
+            }else {
+                $this->Flash->error(__('El producto no se ha modificado correctamente. Por favor, intente de nuevo.'));
+                
+                return $this->redirect(['action' => 'view', $product->product_id]);
             }
-            $this->Flash->error(__('The product could not be saved. Please, try again.'));
         }
 
         $this->set(compact('product'));
-        /* $product = $this->Products->newEmptyEntity();
+    }
 
-        $formData = $this->request->getData();
-        
-        $id = $formData['id-edit'];
+    public function editImage($id = null) {
+        $product = $this->Products->get($id, [
+            'contain' => [],
+        ]);
+
+        /* $formData = $this->request->getData();
+
+        exit(json_encode($formData)); */
 
         if ($this->request->is(['patch', 'post', 'put'])) {
+            $formData = $this->request->getData();
 
-            $product = $this->Products->get($id, [
-                'contain' => [],
-            ]);
-            
-            $product->product_description = $formData['description-edit'];
-            $product->product_category_id = $formData['category-edit'];
-            $product->product_supplier_id = $formData['supplier-edit'];
-            $product->product_img = $formData['img-edit'];
-            $product->product_price = $formData['price-edit'];
-            $product->product_stock = $formData['stock-edit'];
-            $product->product_status = $formData['status-edit'];
-            //$product = $this->Products->patchEntity($product, $formData);
-
-            //exit(json_encode($product));
+            $product->product_img = $formData['input-img'];
             
             if ($this->Products->save($product)) {
-                $this->Flash->success(__('The product has been saved.'));
+                $this->Flash->success(__('La imagen del producto ha sido modificada correctamente.'));
 
-                return;
+                return $this->redirect(['action' => 'view', $product->product_id]);
+            }else {
+                $this->Flash->error(__('No se ha podido modificar la imagen. Por favor, intente de nuevo.'));
+                
+                return $this->redirect(['action' => 'view', $product->product_id]);
             }
-            $this->Flash->error(__('The product could not be saved. Please, try again.'));
-        } *//* else {
-            /* $product = $this->Products->newEmptyEntity();        
+        }
 
-            $product = $this->Products->get($id, [
-                'contain' => [],
-            ]);
-
-            $categories = $this->Products->Categories->find('list', ['limit' => 200])->all();
-            $suppliers = $this->Products->Suppliers->find('list', ['limit' => 200])->all();
-            $this->set(compact('product', 'categories', 'suppliers')); */
-        /*} */
-
-        
+        $this->set(compact('product'));
     }
 
     /**
@@ -214,16 +193,16 @@ class ProductsController extends AppController
      * @return \Cake\Http\Response|null|void Redirects to index.
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
-    public function delete($id = null)
-    {
+    public function delete($id = null) {
         $this->request->allowMethod(['post', 'delete']);
         $product = $this->Products->get($id);
         if ($this->Products->delete($product)) {
-            $this->Flash->success(__('The product has been deleted.'));
+            $this->Flash->success(__('El producto ha sido eliminado correctamente.'));
         } else {
-            $this->Flash->error(__('The product could not be deleted. Please, try again.'));
+            $this->Flash->error(__('No se ha podido eliminar el producto. Por favor, intente de nuevo.'));
         }
 
+        exit(json_encode($product));
         return $this->redirect(['action' => 'index']);
     }
 }

@@ -76,19 +76,17 @@ class RecordsController extends AppController
 
             if ($this->Records->save($record)) {
                 if ($Products->movingStock($id, $formData['quantity'], $formData['accion'])) {
-                    $this->Flash->success(__('The record has been saved.'));
+                    if ($formData['accion'] == "agregar") {
+                        $this->Flash->success(__('Se ha agregado a inventario correctamente.'));
+                    }else if ($formData['accion'] == "eliminar") {
+                        $this->Flash->success(__('Se ha eliminado de inventario correctamente.'));
+                    }
 
                     return $this->redirect(['controller' => 'Products', 'action' => 'view', $id]);
                 }
             }
-            $this->Flash->error(__('The record could not be saved. Please, try again.'));
+            $this->Flash->error(__('No se ha podido mover el inventario correctamente. Por favor, intente de nuevo.'));
         }
-
-        
-
-        //$Products->addStock($id, $formData['quantity']);
-
-        //exit(json_encode($this->request->getData()));
     }
 
     /**

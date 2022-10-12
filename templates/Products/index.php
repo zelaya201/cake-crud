@@ -86,7 +86,6 @@ include 'edit.php';
                     <th><?= $this->Paginator->sort('Descripción') ?></th>
                     <th><?= $this->Paginator->sort('Precio') ?></th>
                     <th><?= $this->Paginator->sort('Stock') ?></th>
-                    <th><?= $this->Paginator->sort('Estado') ?></th>
                     <th><?= $this->Paginator->sort('Categoria') ?></th>
                     <th><?= $this->Paginator->sort('Proveedor') ?></th>
                     <th class="actions"><?= __('Acciones') ?></th>
@@ -100,16 +99,13 @@ include 'edit.php';
                     <td><?= h($product->product_description) ?></td>
                     <td><?= $this->Number->format($product->product_price) ?></td>
                     <td><?= $this->Number->format($product->product_stock) ?></td>
-                    <td><?= $this->Number->format($product->product_status) ?></td>
                     <td><?= $product->has('category') ? $product->category->category_name : '' ?></td>
                     <td><?= $product->has('supplier') ? $product->supplier->supplier_name : '' ?></td>
                     <td class="actions">
                         <?= $this->Html->link(__('Ver'), ['action' => 'view', $product->product_id]) ?>
                         <?php echo('<a href="#"  data-bs-toggle="modal" data-bs-target="#editModal" onclick="editProductId(\'' . $product->product_id . '\')">
                                         Editar
-                                    </a>'
-                            
-                        ); ?>
+                                    </a>'); ?>
                         <?= $this->Form->postLink(__('Eliminar'), ['action' => 'delete', $product->product_id], ['confirm' => __('Are you sure you want to delete # {0}?', $product->product_id)]) ?>
                     </td>
                 </tr>

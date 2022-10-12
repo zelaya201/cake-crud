@@ -20,7 +20,7 @@ class ProductsFixture extends TestFixture
         $this->records = [
             [
                 'product_id' => 1,
-                'product_img' => 'Lorem ipsum dolor sit amet',
+                'product_img' => '',
                 'product_img_dir' => 'Lorem ipsum dolor sit amet',
                 'product_description' => 'Lorem ipsum dolor sit amet',
                 'product_price' => 1,
