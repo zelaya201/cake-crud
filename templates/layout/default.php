@@ -26,6 +26,11 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <?= $cakeDescription ?>:
         <?= $this->fetch('title') ?>
     </title>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js" 
+    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" 
+    crossorigin="anonymous"></script>
+
     <?= $this->Html->meta('icon') ?>
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
@@ -54,27 +59,28 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                                         ['class' => 'd-flex align-items-center mb-3 mb-md-0 
                                         me-md-auto text-decoration-none fs-4 text-light', 'escape' => false]) ?>
 
-            <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-                <li>
-                    <?= $this->Html->link('<i class="bi bi-boxes me-2"></i>Productos', 
-                                        ['controller' => 'Products', 'action' => 'index'],
-                                        ['class' => 'nav-link text-white mt-2 mb-1', 'escape' => false]) ?>
-                </li>
-                <li>
-                    <?= $this->Html->link('<i class="bi bi-people me-2"></i>Proveedores', 
-                                        ['controller' => 'Suppliers', 'action' => 'index'],
-                                        ['class' => 'nav-link text-white mt-2 mb-1', 'escape' => false]) ?>
-                </li>
-                <li>
-                    <?= $this->Html->link('<i class="bi bi-grid me-2"></i>Categorías', 
-                                        ['controller' => 'Categories', 'action' => 'index'],
-                                        ['class' => 'nav-link text-white mt-2 mb-1', 'escape' => false]) ?>
-                </li>
-            </ul>
-            </div>
+          <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+            <li>
+                <?= $this->Html->link('<i class="bi bi-boxes me-2"></i>Productos', 
+                                    ['controller' => 'Products', 'action' => 'index'],
+                                    ['class' => 'nav-link text-white mt-2 mb-1', 'escape' => false]) ?>
+            </li>
+            <li>
+                <?= $this->Html->link('<i class="bi bi-people me-2"></i>Proveedores', 
+                                    ['controller' => 'Suppliers', 'action' => 'index'],
+                                    ['class' => 'nav-link text-white mt-2 mb-1', 'escape' => false]) ?>
+            </li>
+            <li>
+                <?= $this->Html->link('<i class="bi bi-grid me-2"></i>Categorías', 
+                                    ['controller' => 'Categories', 'action' => 'index'],
+                                    ['class' => 'nav-link text-white mt-2 mb-1', 'escape' => false]) ?>
+            </li>
+          </ul>
         </div>
-        </div>
-    </header>
+      </div>
+    </div>
+    
+  </header>
     
     
     <main class="main">

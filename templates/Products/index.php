@@ -9,112 +9,56 @@
 include 'add.php';
 include 'edit.php';
 ?>
-<script>
-        /* function editProductId(product_id) {
-            event.preventDefault();
-            parameters = {
-                'product_id': product_id
-            }
 
-            $.ajax({
-                data: parameters,
-                url:'<?= $this->Url->build(['controller' => 'Products', 'action' => 'findProductById' ]) ?>',
-                type: 'POST',
-                headers: {
-                    'X-CSRF-Token': $('meta[name="csrfToken"]').attr('content')
-                },
-                beforeSend: function(){},
-                success: function(response) {
-                    data = $.parseJSON(response);
-
-                    console.log(data);
-                    $('#id-edit').val(data['product_id']);
-                    $('#description-edit').val(data['product_description']);
-                    $('#category-edit').val(parseInt(data['product_category_id']));
-                    $('#price-edit').val(data['product_price']);
-                    $('#supplier-edit').val(parseInt(data['product_supplier_id']));
-                    $('#stock-edit').val(parseInt(data['product_stock']));
-                    $('#status-edit').val(parseInt(data['product_status']));
-                }
-                
-            })
-        }
-
-        $("#form-edit").on('submit',(function(e) {
-            e.preventDefault();
-
-            id = $('#id-edit').val();
-
-            parameters = {
-                'formData': new FormData(this),
-                'product_id': $('#id-edit').val(),
-            }
-
-            $.ajax({
-                url: '<?= $this->Url->build(['controller' => 'Products', 'action' => 'edit', $product->product_id]) ?>',
-                type: 'POST',
-                data: new FormData(this),
-                headers: {
-                    'X-CSRF-Token': $('meta[name="csrfToken"]').attr('content')
-                },
-                cache : false,
-                processData: false,
-                contentType: false,
-                beforeSend: function(){},
-                success: function(response) {
-                    if (response) {
-                        window.location = "/products/";
-                    }
-                }
-
-            })
-        }));    */
-</script>
-
-<div class="products index content">
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createModal">
-        Nuevo Producto
-    </button>
-
-    <h3><?= __('Productos') ?></h3>
-    <div class="table-responsive">
-        <table>
-            <thead>
-                <tr>
-                    <th><?= $this->Paginator->sort('Id') ?></th>
-                    <th><?= $this->Paginator->sort('Imagen') ?></th>
-                    <th><?= $this->Paginator->sort('Descripción') ?></th>
-                    <th><?= $this->Paginator->sort('Precio') ?></th>
-                    <th><?= $this->Paginator->sort('Stock') ?></th>
-                    <th><?= $this->Paginator->sort('Categoria') ?></th>
-                    <th><?= $this->Paginator->sort('Proveedor') ?></th>
-                    <th class="actions"><?= __('Acciones') ?></th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php foreach ($products as $product): ?>
-                <tr>
-                    <td><?= $this->Number->format($product->product_id) ?></td>
-                    <td><?= h($product->product_img) ?></td>
-                    <td><?= h($product->product_description) ?></td>
-                    <td><?= $this->Number->format($product->product_price) ?></td>
-                    <td><?= $this->Number->format($product->product_stock) ?></td>
-                    <td><?= $product->has('category') ? $product->category->category_name : '' ?></td>
-                    <td><?= $product->has('supplier') ? $product->supplier->supplier_name : '' ?></td>
-                    <td class="actions">
-                        <?= $this->Html->link(__('Ver'), ['action' => 'view', $product->product_id]) ?>
-                        <?php echo('<a href="#"  data-bs-toggle="modal" data-bs-target="#editModal" onclick="editProductId(\'' . $product->product_id . '\')">
-                                        Editar
-                                    </a>'); ?>
-                        <?= $this->Form->postLink(__('Eliminar'), ['action' => 'delete', $product->product_id], ['confirm' => __('Are you sure you want to delete # {0}?', $product->product_id)]) ?>
-                    </td>
-                </tr>
-                <?php endforeach; ?>
-            </tbody>
-        </table>
+<div class="row">
+    <div class="row">
+        <div class="panel-heading col-md-10">
+            <h3><?= __('Productos') ?></h3>
+        </div>
+        <div class="col-md-2 text-end">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createModal">
+                Nuevo Producto
+            </button> 
+        </div>
+        
+        
     </div>
-    
-    
+    <div class="row">
+        <div class="col-md-1 fw-bold ">
+
+            <?= $this->form->control('search');?>
+        </div>            
+    </div>
+    <div class="table-content mt-4">
+        <div class="row">
+            <?php foreach ($products as $product): ?>
+                <div class="col-md-3" >
+                    <div class="card" >
+                        
+                        <article class="well">
+                            
+                            <?= $this->Html->image('../files/products/product_img/' . $product->product_img_dir . '/square_' . $product->product_img, ['alt' => $product->product_description, 'class' => 'bd-placeholder-img card-img-top']) ?>
+                            <div class="card-body">
+                                <strong><?= h($product->product_description) ?></strong>
+                                <br>
+                                <strong>Precio: </strong> <?= h($product->product_price) ?>
+                                <br>
+
+                                
+                                <?= $this->Html->link('Ver producto', ['controller' => 'Products', 'action' => 'view', $product->product_id],
+                                    ['class' => 'btn btn-sm btn-success']) ?>
+                                
+                            
+                            </div>
+                        </article>
+                    
+                    </div>
+                    <br><br>
+                </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
+
     <div class="paginator">
         <ul class="pagination">
             <?= $this->Paginator->first('<< ' . __('first')) ?>
@@ -127,3 +71,35 @@ include 'edit.php';
     </div>
 
 </div>
+
+<script>
+    $('document').ready(function(){
+         $('#search').keyup(function(){
+            var searchkey = $(this).val();
+            searchTags( searchkey );
+         });
+
+        function searchTags( keyword ){
+        var data = new FormData();
+        data.append('keyword', keyword);
+        $.ajax({
+                    type: 'post',
+                    url : "<?php echo $this->Url->build( [ 'controller' => 'Products', 'action' => 'Search' ] ); ?>",
+                    data: data,
+
+                    headers: {
+                        'X-CSRF-Token': $('meta[name="csrfToken"]').attr('content')
+                    },
+                    cache : false,
+                    processData: false,
+                    contentType: false,
+
+                    success: function( response )
+                    {       
+                        /* console.log(response); */
+                        $( '.table-content' ).html(response);
+                    }
+                });
+        };
+    });
+</script>

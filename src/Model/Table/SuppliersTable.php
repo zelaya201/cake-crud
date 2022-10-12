@@ -56,6 +56,24 @@ class SuppliersTable extends Table
             ->requirePresence('supplier_name', 'create')
             ->notEmptyString('supplier_name');
 
+        $validator
+            ->scalar('supplier_address')
+            ->maxLength('supplier_address', 100)
+            ->requirePresence('supplier_address', 'create')
+            ->notEmptyString('supplier_address');
+
+        $validator
+            ->scalar('supplier_phone')
+            ->maxLength('supplier_phone', 15)
+            ->requirePresence('supplier_phone', 'create')
+            ->notEmptyString('supplier_phone');
+
+        $validator
+            ->scalar('supplier_email')
+            ->maxLength('supplier_email', 30)
+            ->requirePresence('supplier_email', 'create')
+            ->notEmptyString('supplier_email');
+
         return $validator;
     }
 }

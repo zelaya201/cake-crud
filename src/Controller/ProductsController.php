@@ -205,4 +205,23 @@ class ProductsController extends AppController
         exit(json_encode($product));
         return $this->redirect(['action' => 'index']);
     }
+
+    public function search()
+    {
+
+        $this->request->allowMethod('ajax');
+   
+        $keyword = $this->request->getData('keyword');
+
+        
+
+        $query = $this->Products->find('all',[
+              'conditions' => ['product_description LIKE'=>'%'.$keyword.'%'],
+              'order' => ['Products.product_id'=>'DESC']
+        ]);
+
+        $this->set('products', $this->paginate($query));
+        $this->set('_serialize', ['products']); 
+
+    }
 }

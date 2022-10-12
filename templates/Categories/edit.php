@@ -4,29 +4,37 @@
  * @var \App\Model\Entity\Category $category
  */
 ?>
-<div class="row">
-    <aside class="column">
-        <div class="side-nav">
-            <h4 class="heading"><?= __('Actions') ?></h4>
-            <?= $this->Form->postLink(
-                __('Delete'),
-                ['action' => 'delete', $category->category_id],
-                ['confirm' => __('Are you sure you want to delete # {0}?', $category->category_id), 'class' => 'side-nav-item']
-            ) ?>
-            <?= $this->Html->link(__('List Categories'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
-        </div>
-    </aside>
-    <div class="column-responsive column-80">
-        <div class="categories form content">
-            <?= $this->Form->create($category) ?>
-            <fieldset>
-                <legend><?= __('Edit Category') ?></legend>
-                <?php
-                    echo $this->Form->control('category_name');
-                ?>
-            </fieldset>
-            <?= $this->Form->button(__('Submit')) ?>
-            <?= $this->Form->end() ?>
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editModalLabel">Editar categoría</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <?= $this->Form->create($category, ['url' => ['action' => 'edit', $category->category_id]], ['id' => 'form-edit']) ?>
+                        <?= $this->Form->control('id', ['label' => false, 'type' => 'hidden']) ?> 
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h6>Nombre</h6>
+                            </div>
+                            <div class="col-md-8">
+                                <?= $this->Form->control('category-name', ['label' => false]) ?> 
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <?= $this->Form->button(__('Guardar'), ['class' => 'btn-primary']) ?>
+                <?= $this->Form->end() ?>
+            
+            </div>
         </div>
     </div>
 </div>

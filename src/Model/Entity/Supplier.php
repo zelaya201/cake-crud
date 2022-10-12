@@ -10,6 +10,9 @@ use Cake\ORM\Entity;
  *
  * @property int $supplier_id
  * @property string $supplier_name
+ * @property string $supplier_address
+ * @property string $supplier_phone
+ * @property string $supplier_email
  */
 class Supplier extends Entity
 {
@@ -24,5 +27,8 @@ class Supplier extends Entity
      */
     protected $_accessible = [
         'supplier_name' => true,
+        'supplier_address' => true,
+        'supplier_phone' => true,
+        'supplier_email' => true,
     ];
 }
