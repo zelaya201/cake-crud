@@ -14,7 +14,7 @@
                 <div class="row">
                     <div class="col-md-1"></div>
                     <div class="col-md-10">
-                        <?= $this->Form->create($record, ['url' => ['controller' => 'Records', 'action' => 'add', $product->product_id], 'id' => 'form-stock']) ?>
+                        <?= $this->Form->create($record, ['url' => ['controller' => 'Products', 'action' => 'movingStock', $product->product_id], 'id' => 'form-stock']) ?>
                         <div class="row">
                             <div class="col-md-4">
                                 <h6>Cantidad</h6>

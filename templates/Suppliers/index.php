@@ -10,12 +10,12 @@ include 'delete-modal.php';
 ?>
 <div class="suppliers index content">
     <div class="row">
-        <div class="col-md-10">
+        <div class="col-md-9">
             <h3><?= __('Proveedores') ?></h3>
         </div>
-        <div class="col-md-2 text-end">
+        <div class="col-md-3 text-end">
             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#createModal">
-            <i class="bi bi-person-plus"></i>       Nuevo Proveedor
+                <i class="bi bi-person-plus me-2"></i>Nuevo Proveedor
             </button> 
         </div>
     </div>
@@ -65,7 +65,6 @@ include 'delete-modal.php';
             <?= $this->Paginator->numbers() ?>
             <?= $this->Paginator->next(__('Siguiente') . ' >') ?>
         </ul>
-        <p><?= $this->Paginator->counter(__('Pagina {{page}} de {{pages}}, mostrando {{current}} registro(s) de {{count}} total')) ?></p>
     </div>
 </div>
 <script>

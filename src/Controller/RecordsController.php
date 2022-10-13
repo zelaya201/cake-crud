@@ -3,9 +3,6 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
-use App\Controller\Products;
-//App::i('Controller', 'Products');
-
 /**
  * Records Controller
  *
@@ -52,41 +49,29 @@ class RecordsController extends AppController
      * @return \Cake\Http\Response|null|void Redirects on successful add, renders view otherwise.
      * @param string|null $id Product id.
      */
-    public function add($id = null)
-    {        
-        $Products = new ProductsController;
-
+    public function add($formData = null, $id = null) {        
         $record = $this->Records->newEmptyEntity();
-        
-        if ($this->request->is('post')) {
-            $formData = $this->request->getData(); //Se obtienen los datos del formulario
 
-            date_default_timezone_set('America/El_Salvador'); //Se establece la zona horaria
+        date_default_timezone_set('America/El_Salvador'); //Se establece la zona horaria
 
-            /* Se setean los datos al objeto record */
-            $record->record_date = date('Y-m-d H:i:s');
-            if ($formData['accion'] == "agregar") {
-                $record->record_description = 'Se agregó ' . $formData['quantity'] . ' producto(s) al inventario';
-            }else if ($formData['accion'] == 'eliminar') {
-                $record->record_description = 'Se eliminó ' . $formData['quantity'] . ' producto(s) del inventario';
-            }
-            $record->record_quantity = $formData['quantity'];
-            $record->record_reference = $formData['reference'];
-            $record->record_product_id = $id;
+        /* Se setean los datos al objeto record */
+        $record->record_date = date('Y-m-d H:i:s');
 
-            if ($this->Records->save($record)) {
-                if ($Products->movingStock($id, $formData['quantity'], $formData['accion'])) {
-                    if ($formData['accion'] == "agregar") {
-                        $this->Flash->success(__('Se ha agregado a inventario correctamente.'));
-                    }else if ($formData['accion'] == "eliminar") {
-                        $this->Flash->success(__('Se ha eliminado de inventario correctamente.'));
-                    }
-
-                    return $this->redirect(['controller' => 'Products', 'action' => 'view', $id]);
-                }
-            }
-            $this->Flash->error(__('No se ha podido mover el inventario correctamente. Por favor, intente de nuevo.'));
+        if ($formData['accion'] == 'agregar') {
+            $record->record_description = 'Se agregó ' . $formData['quantity'] . ' producto(s) al inventario';
+        }else if ($formData['accion'] == 'eliminar') {
+            $record->record_description = 'Se eliminó ' . $formData['quantity'] . ' producto(s) del inventario';
         }
+
+        $record->record_quantity = $formData['quantity'];
+        $record->record_reference = $formData['reference'];
+        $record->record_product_id = $id;
+
+        if ($this->Records->save($record)) {
+            return true;
+        }else {
+            return false;
+        } 
     }
 
     /**

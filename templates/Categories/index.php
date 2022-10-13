@@ -10,12 +10,12 @@ include 'delete-modal.php';
 ?>
 <div class="categories index content">
     <div class="row">
-        <div class="col-md-10">
+        <div class="col-md-9">
             <h3><?= __('Categorías') ?></h3>
         </div>
-        <div class="col-md-2 text-end">
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createModal">
-               <i class="bi bi-folder-plus"></i>      Nueva Categoría
+        <div class="col-md-3 text-end">
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#createModal">
+               <i class="bi bi-folder-plus me-2"></i>Nueva Categoría
             </button> 
         </div>
     </div>
@@ -57,7 +57,6 @@ include 'delete-modal.php';
             <?= $this->Paginator->numbers() ?>
             <?= $this->Paginator->next(__('Siguiente') . ' >') ?>
         </ul>
-        <p><?= $this->Paginator->counter(__('Pagina {{page}} de {{pages}}, mostrando {{current}} registro(s) de {{count}} total')) ?></p>
     </div>
 </div>
 <script>

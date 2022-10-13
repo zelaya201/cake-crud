@@ -43,7 +43,7 @@ include 'delete-modal.php'
         parametros.append('accion', accion) // Se agrega el valor de la accion al formData
 
         $.ajax({
-            url: '<?= $this->Url->build(['controller' => 'Records', 'action' => 'add', $product->product_id]) ?>',
+            url: '<?= $this->Url->build(['controller' => 'Products', 'action' => 'movingStock', $product->product_id]) ?>',
             type: 'POST',
             data: parametros,
             headers: {
@@ -85,7 +85,7 @@ include 'delete-modal.php'
         })
     })
 </script>
-<div class="container" style="border: 1px solid #DEE2E6; border-radius: 8px;">
+<div class="container mb-4" style="border: 1px solid #DEE2E6; border-radius: 8px;">
     <div class="row">
         <div class="col-md-12">
             <div class="row mt-4">

@@ -256,7 +256,6 @@
                 <button type="button" id="close-button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 <?= $this->Form->button(__('Guardar'), ['class' => 'btn-primary']) ?>
                 <?= $this->Form->end() ?>
-            
             </div>
         </div>
     </div>

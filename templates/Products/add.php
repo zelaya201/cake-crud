@@ -201,7 +201,7 @@
                             + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
     }
 
-    /* Seteo de eventos en los campos */alert
+    /* Seteo de eventos en los campos */
 
     textArea.addEventListener('keyup', validarTextArea);
     textArea.addEventListener('blur', validarTextArea); 

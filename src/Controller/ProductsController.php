@@ -3,6 +3,8 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
+use App\Controller\Records; // Se agrega el controlador de Records
+
 /**
  * Products Controller
  *
@@ -34,21 +36,41 @@ class ProductsController extends AppController
      * @param string|null $id Product id.
     */
 
-    public function movingStock($id = null, $quantity, $action) {
+    public function movingStock($id = null) {
+        $Records = new RecordsController;
+        
         $product = $this->Products->get($id, [
             'contain' => [],
         ]); 
-        
-        if ($action == 'agregar') {
-            $product->product_stock = intval($quantity) + $product->product_stock;
-        }else if ($action == 'eliminar') {
-            $product->product_stock = $product->product_stock - intval($quantity);
-        }
 
-        if ($this->Products->save($product)) {
-            return true;
-        }else {
-            return false;
+        if ($this->request->is('post')) {
+            $formData = $this->request->getData(); //Se obtienen los datos del formulario
+
+            if ($formData['accion'] == "agregar") {
+                $product->product_stock = intval($formData['quantity']) + $product->product_stock;
+            }else if ($formData['accion'] == 'eliminar') {
+                if ($product->product_stock >= intval($formData['quantity'])) {
+                    $product->product_stock = $product->product_stock - intval($formData['quantity']);
+                }else {
+                    $this->Flash->error(__('Error: No existe el stock suficiente para eliminar.'));
+                    return $this->redirect(['controller' => 'Products', 'action' => 'view', $product->product_id]);
+                }
+            }
+            if ($this->Products->save($product)) {
+                if ($Records->add($formData, $product->product_id)) {
+                    if ($formData['accion'] == "agregar") {
+                        $this->Flash->success(__('Se ha agregado a inventario correctamente.'));
+                    }else if ($formData['accion'] == "eliminar") {
+                        $this->Flash->success(__('Se ha eliminado de inventario correctamente.'));
+                    }
+
+                    return $this->redirect(['controller' => 'Products', 'action' => 'view', $product->product_id]);
+                }
+            }else {
+                return $this->redirect(['controller' => 'Products', 'action' => 'view', $product->product_id]);
+                
+                $this->Flash->error(__('No se ha podido mover el inventario correctamente. Por favor, intente de nuevo.'));
+            }
         }
     }
 
@@ -120,7 +142,6 @@ class ProductsController extends AppController
 
                 return $this->redirect(['action' => 'index']);
             }
-
         }
     }
 
@@ -163,10 +184,6 @@ class ProductsController extends AppController
             'contain' => [],
         ]);
 
-        /* $formData = $this->request->getData();
-
-        exit(json_encode($formData)); */
-
         if ($this->request->is(['patch', 'post', 'put'])) {
             $formData = $this->request->getData();
 
@@ -206,22 +223,17 @@ class ProductsController extends AppController
         return $this->redirect(['action' => 'index']);
     }
 
-    public function search()
-    {
-
+    public function search() {
         $this->request->allowMethod('ajax');
    
         $keyword = $this->request->getData('keyword');
 
-        
-
         $query = $this->Products->find('all',[
               'conditions' => ['product_description LIKE'=>'%'.$keyword.'%'],
-              'order' => ['Products.product_id'=>'DESC']
+              'order' => ['Products.product_id'=>'ASC']
         ]);
 
         $this->set('products', $this->paginate($query));
         $this->set('_serialize', ['products']); 
-
     }
 }

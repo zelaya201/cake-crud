@@ -40,6 +40,5 @@ class AppView extends View
     public function initialize(): void
     {
         $this->initializeUI(['layout' => false]);
-        $this->loadHelper('Avolle/FontAwesome.FontAwe');
     }
 }
