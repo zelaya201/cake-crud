@@ -8,55 +8,58 @@ include 'add.php';
 include 'edit.php';
 include 'delete-modal.php';
 ?>
-<div class="categories index content">
-    <div class="row">
-        <div class="col-md-9">
-            <h3><?= __('Categorías') ?></h3>
+<div class="container mb-4" style="border: 1px solid #DEE2E6; border-radius: 8px;">
+    <div class="row mt-3 ms-3 me-3">
+        <div class="row">
+            <div class="col-md-9 mb-2 mt-1">
+                <h4><?= __('Categorías') ?></h3>
+            </div>
+            <div class="col-md-3 text-end">
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#createModal">
+                <i class="bi bi-journal-plus me-2"></i>Nueva Categoría
+                </button> 
+            </div>
         </div>
-        <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#createModal">
-               <i class="bi bi-folder-plus me-2"></i>Nueva Categoría
-            </button> 
+        <hr>
+        <div class="table-responsive mt-2">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID Categoría</th>
+                        <th>Nombre</th>
+                        <th class="actions"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach ($categories as $category): ?>
+                    <tr>
+                        <td><?= $this->Number->format($category->category_id) ?></td>
+                        <td><?= h($category->category_name) ?></td>
+                        <td class="actions">
+                        <button type="button" class="btn btn-primary" onclick="editCategoryId()" data-bs-toggle="modal" data-bs-target="#editModal">
+                                <i class="bi bi-pencil-fill"></i>&nbsp;&nbsp;Editar
+                        </button> 
+
+                        <?php $this->Form->setTemplates([
+                                'confirmJs' => "addToModal('{{formName}}'); return false;"
+                            ]) ?>   
+
+                        <?= $this->Form->postLink(__('      Eliminar'), ['action' => 'delete', $category->category_id], ['confirm' => __('Estas seguro de eliminar: {0}?', $category->category_name), 'class' => 'btn btn-danger bi bi-trash',
+                                                'data-bs-toggle' => 'modal',
+                                                'data-bs-target' => '#deleteModal',]) ?>
+                        </td>
+                    </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
         </div>
-    </div>
-    <div class="table-responsive">
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>ID Categoría</th>
-                    <th>Nombre</th>
-                    <th class="actions"></th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php foreach ($categories as $category): ?>
-                <tr>
-                    <td><?= $this->Number->format($category->category_id) ?></td>
-                    <td><?= h($category->category_name) ?></td>
-                    <td class="actions">
-                    <button type="button" class="btn btn-primary" onclick="editCategoryId()" data-bs-toggle="modal" data-bs-target="#editModal">
-                            <i class="bi bi-pencil-fill"></i>&nbsp;&nbsp;Editar
-                    </button> 
-
-                    <?php $this->Form->setTemplates([
-                            'confirmJs' => "addToModal('{{formName}}'); return false;"
-                        ]) ?>   
-
-                    <?= $this->Form->postLink(__('      Eliminar'), ['action' => 'delete', $category->category_id], ['confirm' => __('Estas seguro de eliminar: {0}?', $category->category_name), 'class' => 'btn btn-danger bi bi-trash',
-                                            'data-bs-toggle' => 'modal',
-                                            'data-bs-target' => '#deleteModal',]) ?>
-                    </td>
-                </tr>
-                <?php endforeach; ?>
-            </tbody>
-        </table>
-    </div>
-    <div class="paginator">
-        <ul class="pagination">
-            <?= $this->Paginator->prev('< ' . __('Previo')) ?>
-            <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('Siguiente') . ' >') ?>
-        </ul>
+        <div class="paginator">
+            <ul class="pagination">
+                <?= $this->Paginator->prev('< ' . __('Previo')) ?>
+                <?= $this->Paginator->numbers() ?>
+                <?= $this->Paginator->next(__('Siguiente') . ' >') ?>
+            </ul>
+        </div>
     </div>
 </div>
 <script>

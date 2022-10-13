@@ -8,63 +8,66 @@ include 'add.php';
 include 'edit.php';
 include 'delete-modal.php';
 ?>
-<div class="suppliers index content">
-    <div class="row">
-        <div class="col-md-9">
-            <h3><?= __('Proveedores') ?></h3>
+<div class="container mb-4" style="border: 1px solid #DEE2E6; border-radius: 8px;">
+    <div class="row mt-3 ms-3 me-3">
+        <div class="row mb-2">
+            <div class="col-md-9 mt-1">
+                <h4><?= __('Proveedores') ?></h4>
+            </div>
+            <div class="col-md-3 text-end">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#createModal">
+                    <i class="bi bi-person-plus me-2"></i>Nuevo Proveedor
+                </button> 
+            </div>
         </div>
-        <div class="col-md-3 text-end">
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#createModal">
-                <i class="bi bi-person-plus me-2"></i>Nuevo Proveedor
-            </button> 
+        <hr>
+        <div class="table-responsive mt-2">
+            <table class="table table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID Proveedor</th>
+                        <th>Nombre</th>
+                        <th>Dirección</th>
+                        <th>Teléfono</th>
+                        <th>Correo</th>
+                        <th class="actions"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach ($suppliers as $supplier): ?>
+                    <tr>
+                        <td><?= $this->Number->format($supplier->supplier_id) ?></td>
+                        <td><?= h($supplier->supplier_name) ?></td>
+                        <td><?= h($supplier->supplier_address) ?></td>
+                        <td><?= h($supplier->supplier_phone) ?></td>
+                        <td><?= h($supplier->supplier_email) ?></td>
+                        <td class="actions">
+                        <!-- <?php echo('<a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editModal" onclick="editSupplierId(\'' . $supplier->supplier_id . '\')">
+                                            <i class="bi bi-pencil-fill"></i>&nbsp;&nbsp;Editar
+                                        </a>'); ?> -->
+                            <button type="button" class="btn btn-primary" onclick="editSupplierId()" data-bs-toggle="modal" data-bs-target="#editModal">
+                                <i class="bi bi-pencil-fill"></i>&nbsp;&nbsp;Editar
+                            </button> 
+                            <!-- formName almacena un numero "serial de cada modal correspondiente a un registro -->
+                            <?php $this->Form->setTemplates([
+                                'confirmJs' => "addToModal('{{formName}}'); return false;"
+                            ]) ?>
+                            <?= $this->Form->postLink(__('      Eliminar'), ['action' => 'delete', $supplier->supplier_id], ['confirm' => __('Estas seguro de eliminar: {0}?', $supplier->supplier_name), 'class' => 'btn btn-danger bi bi-trash',
+                                                'data-bs-toggle' => 'modal',
+                                                'data-bs-target' => '#deleteModal',]) ?>
+                        </td>
+                    </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
         </div>
-    </div>
-    <div class="table-responsive">
-        <table class="table table-striped">
-            <thead class="thead-dark">
-                <tr>
-                    <th>ID Proveedor</th>
-                    <th>Nombre</th>
-                    <th>Dirección</th>
-                    <th>Teléfono</th>
-                    <th>Correo</th>
-                    <th class="actions"></th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php foreach ($suppliers as $supplier): ?>
-                <tr>
-                    <td><?= $this->Number->format($supplier->supplier_id) ?></td>
-                    <td><?= h($supplier->supplier_name) ?></td>
-                    <td><?= h($supplier->supplier_address) ?></td>
-                    <td><?= h($supplier->supplier_phone) ?></td>
-                    <td><?= h($supplier->supplier_email) ?></td>
-                    <td class="actions">
-                    <!-- <?php echo('<a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editModal" onclick="editSupplierId(\'' . $supplier->supplier_id . '\')">
-                                        <i class="bi bi-pencil-fill"></i>&nbsp;&nbsp;Editar
-                                    </a>'); ?> -->
-                        <button type="button" class="btn btn-primary" onclick="editSupplierId()" data-bs-toggle="modal" data-bs-target="#editModal">
-                            <i class="bi bi-pencil-fill"></i>&nbsp;&nbsp;Editar
-                        </button> 
-                        <!-- formName almacena un numero "serial de cada modal correspondiente a un registro -->
-                        <?php $this->Form->setTemplates([
-                            'confirmJs' => "addToModal('{{formName}}'); return false;"
-                        ]) ?>
-                        <?= $this->Form->postLink(__('      Eliminar'), ['action' => 'delete', $supplier->supplier_id], ['confirm' => __('Estas seguro de eliminar: {0}?', $supplier->supplier_name), 'class' => 'btn btn-danger bi bi-trash',
-                                            'data-bs-toggle' => 'modal',
-                                            'data-bs-target' => '#deleteModal',]) ?>
-                    </td>
-                </tr>
-                <?php endforeach; ?>
-            </tbody>
-        </table>
-    </div>
-    <div class="paginator">
-        <ul class="pagination">
-            <?= $this->Paginator->prev('< ' . __('Previo')) ?>
-            <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('Siguiente') . ' >') ?>
-        </ul>
+        <div class="paginator">
+            <ul class="pagination">
+                <?= $this->Paginator->prev('< ' . __('Previo')) ?>
+                <?= $this->Paginator->numbers() ?>
+                <?= $this->Paginator->next(__('Siguiente') . ' >') ?>
+            </ul>
+        </div>
     </div>
 </div>
 <script>
