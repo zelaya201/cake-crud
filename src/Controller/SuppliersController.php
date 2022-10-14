@@ -86,10 +86,10 @@ class SuppliersController extends AppController
             'contain' => [],
             ]);
 
-            $supplier->supplier_name = $formData['supplier-name'];
-            $supplier->supplier_address = $formData['supplier-address'];
-            $supplier->supplier_phone = $formData['supplier-phone'];
-            $supplier->supplier_email = $formData['supplier-email'];
+            $supplier->supplier_name = $formData['suppliername'];
+            $supplier->supplier_address = $formData['supplieraddress'];
+            $supplier->supplier_phone = $formData['supplierphone'];
+            $supplier->supplier_email = $formData['supplieremail'];
 
             if ($this->Suppliers->save($supplier)) {
                 $this->Flash->success(__('El proveedor ha sido modificado con éxito.'));

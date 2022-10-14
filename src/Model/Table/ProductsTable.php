@@ -74,40 +74,6 @@ class ProductsTable extends Table
      * @param \Cake\Validation\Validator $validator Validator instance.
      * @return \Cake\Validation\Validator
      */
-    /* public function validationDefault(Validator $validator): Validator
-    {
-        $validator
-            ->scalar('product_img')
-            ->maxLength('product_img', 255)
-            ->requirePresence('product_img', 'create'); 
-
-        $validator
-            ->scalar('product_description')
-            ->maxLength('product_description', 255)
-            ->requirePresence('product_description', 'create')
-            ->notEmptyString('product_description', 'Por favor rellene este campo');
-
-        $validator
-            ->numeric('product_price')
-            ->requirePresence('product_price', 'create')
-            ->notEmptyString('product_price');
-
-        $validator
-            ->integer('product_stock')
-            ->requirePresence('product_stock', 'create')
-            ->notEmptyString('product_stock');
-
-        $validator
-            ->integer('product_category_id')
-            ->allowEmptyString('product_category_id');
-
-        $validator
-            ->integer('product_supplier_id')
-            ->allowEmptyString('product_supplier_id');
-
-        return $validator;
-    } */
-
     /**
      * Returns a rules checker object that will be used for validating
      * application integrity.

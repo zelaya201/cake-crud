@@ -81,7 +81,7 @@ class CategoriesController extends AppController
                 'contain' => [],
                 ]);
 
-                $category->category_name = $formData['category-name'];
+            $category->category_name = $formData['categoryname'];
 
             if ($this->Categories->save($category)) {
                 $this->Flash->success(__('The category has been saved.'));

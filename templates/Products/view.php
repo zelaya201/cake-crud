@@ -29,39 +29,6 @@ include 'delete-modal.php'
     
     });
 
-    /* Agregar y eliminar stock*/
-    $("#form-stock").on('submit',(function(e) {
-        event.preventDefault();
-        
-        if(document.querySelector('button[id="add-stock"]')){
-            accion = 'agregar'
-        }else {
-            accion = 'eliminar'
-        }
-
-        parametros = new FormData(this); // Se instancia el formData
-        parametros.append('accion', accion) // Se agrega el valor de la accion al formData
-
-        $.ajax({
-            url: '<?= $this->Url->build(['controller' => 'Products', 'action' => 'movingStock', $product->product_id]) ?>',
-            type: 'POST',
-            data: parametros,
-            headers: {
-                'X-CSRF-Token': $('meta[name="csrfToken"]').attr('content')
-            },
-            cache : false,
-            processData: false,
-            contentType: false,
-            beforeSend: function(){},
-            success: function(response) {
-                if (response) {
-                    window.location = "/products/view/" + "<?php echo ($product->product_id); ?>";
-                    
-                }
-            }
-        })
-    }))
-
     /* Eliminar producto */
     function addToModal(formName) {
         const modal = document.getElementById('deleteModal');
@@ -80,11 +47,23 @@ include 'delete-modal.php'
 
     /* Cambiar imagen */
     $(document).ready(function() {
-        $('#input-img').change(function() {
-            $('#form-img').submit()
+        expresion = /(\.jpg|\.jpeg|\.png)$/i;
+
+        $('#input-img').change(function(e) {
+            if (expresion.test(e.target.value)) {
+                $('#form-img').submit()
+            }else {
+                alert('Error al subir la imagen. Solo se permiten archivos de tipo .jpg, .jpeg y .png.', 'img')
+            }
         })
     })
 </script>
+<div class="row">
+    <div class="col">
+        <div id="alertPlaceholderImg">
+        </div>
+    </div>
+</div>
 <div class="container mb-4" style="border: 1px solid #DEE2E6; border-radius: 8px;">
     <div class="row">
         <div class="col-md-12">
@@ -97,11 +76,11 @@ include 'delete-modal.php'
                                             ['alt' => $product->product_description, 'class' => 'img-responsive img-thumbnail center-block', 'width' => '270px' ]) ?>
                     </div>
                     <div class="text-center mt-3">
-                            <?= $this->Form->control('input-img', ['type' => 'file', 'style' => 'display: none;', 'label' => false]) ?>
+                        <?= $this->Form->control('input-img', ['type' => 'file', 'style' => 'display: none;', 'label' => false]) ?>
                             <label for="input-img" class="btn btn-outline-secondary btn-sm">
                                 <i class="bi bi-image-fill"></i>&nbsp;&nbsp;Cambiar foto
                             </label>
-                            
+
                             <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#editModal">
                                 <i class="bi bi-pencil-fill"></i>&nbsp;&nbsp;Editar
                             </button>
@@ -212,14 +191,18 @@ include 'delete-modal.php'
 <script>
     // obtenemos el formulario
     var form = document.getElementById('form-edit');
+    var formStock = document.getElementById('form-stock');
 
     // Obtenemos todos los campos del formulario
     var textArea = document.querySelector('#form-edit textarea');
     var inputs = document.querySelectorAll('#form-edit input');
     var selects = document.querySelectorAll('#form-edit select')
+    var inputQuantity = document.getElementById('quantity');
 
     // Obtenemos el div para mostrar la alerta
     var alertPlaceholder = document.getElementById('alertPlaceholder');
+    var alertPlaceholderStock = document.getElementById('alertPlaceholderStock');
+    var alertPlaceholderStock = document.getElementById('alertPlaceholderImg');
 
     // Arreglo para validar los campos
     const campos = {
@@ -227,6 +210,7 @@ include 'delete-modal.php'
         product_category_id: true,
         product_price: true,
         product_supplier_id: true,
+        quantity: false,
     }
 
     // Arreglo de mensajes invalidos
@@ -235,11 +219,13 @@ include 'delete-modal.php'
         product_category_id: 'Categoria requerida,',
         product_price: 'Precio requerido.',
         product_supplier_id: 'Proveedor requerido.',
+        quantity: 'Cantidad requerida.'
     }
 
     // Arreglo de expresiones regulares para validación
     var expresiones = {
         price: /^(?=.*[1-9])\d*(?:\.\d{1,2})?\s*$/,
+        quantity: /^[1-9]\d*$/,
     }
 
     const validarInputs = (e) => {
@@ -247,6 +233,10 @@ include 'delete-modal.php'
             case "product_price" :
                 validarCampo(expresiones.price, e.target, 'product_price', 'El precio solo debe contener numeros, ser mayor a cero y no poseer más de dos decimales.');
                 break;
+            case "quantity" :
+                validarCampo(expresiones.quantity, e.target, 'quantity', 'La cantidad debe ser un numero entero mayor a cero.');
+                break;
+
         }
     }
 
@@ -300,10 +290,20 @@ include 'delete-modal.php'
     }
 
 
-    function alert(message) {
-        alertPlaceholder.innerHTML = '<div class="alert alert-danger alert-dismissible" role="alert">'
-                            + '<i class="bi bi-exclamation-triangle-fill me-2"></i>' + message 
-                            + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+    function alert(message, action) {
+        if (action == 'edit') {
+            alertPlaceholder.innerHTML = '<div class="alert alert-danger alert-dismissible" role="alert">'
+                                + '<i class="bi bi-exclamation-triangle-fill me-2"></i>' + message 
+                                + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+        }else if (action == 'stock') {
+            alertPlaceholderStock.innerHTML = '<div class="alert alert-danger alert-dismissible" role="alert">'
+                                + '<i class="bi bi-exclamation-triangle-fill me-2"></i>' + message 
+                                + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+        }else if (action == 'img') {
+            alertPlaceholderImg.innerHTML = '<div class="alert alert-danger alert-dismissible" role="alert">'
+                                + '<i class="bi bi-exclamation-triangle-fill me-2"></i>' + message 
+                                + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+        }
     }
 
     /* Seteo de eventos en los campos */
@@ -321,13 +321,15 @@ include 'delete-modal.php'
         select.addEventListener('blur', validarTextArea);
         select.addEventListener('change', validarTextArea);
     })
-    
+
+    inputQuantity.addEventListener('keyup', validarInputs);
+    inputQuantity.addEventListener('blur', validarInputs);
 
     // Validacion de submit
     form.addEventListener('submit', (e) => {
         if (!form.checkValidity() || !campos.product_description || !campos.product_category_id || !campos.product_price || !campos.product_supplier_id) {
             e.preventDefault();
-            alert('Error: Por favor rellene el formulario correctamente.'); 
+            alert('Error: Por favor rellene el formulario correctamente.', 'edit'); 
 
             if (textArea.value == "") {
                 textArea.classList.add('is-invalid');
@@ -376,5 +378,50 @@ include 'delete-modal.php'
 
         form.reset();
     })
+
+    /* Agregar y eliminar stock*/
+    formStock.addEventListener('submit',(function(e) {
+        if (!formStock.checkValidity() || !campos.quantity) {
+            e.preventDefault();
+            alert('Error: Por favor rellene el formulario correctamente.', 'stock'); 
+
+            if (inputQuantity.value == "") {
+                inputQuantity.classList.add('is-invalid');
+
+                document.getElementById(`invalid-${inputQuantity.name}`).innerHTML = mensajes[inputQuantity.name];
+            }
+        }else {
+            event.preventDefault();
+        
+            if(document.querySelector('button[id="add-stock"]')){
+                accion = 'agregar'
+            }else {
+                accion = 'eliminar'
+            }
+
+            parametros = new FormData(this); // Se instancia el formData
+            parametros.append('accion', accion) // Se agrega el valor de la accion al formData
+
+            $.ajax({
+                url: '<?= $this->Url->build(['controller' => 'Products', 'action' => 'movingStock', $product->product_id]) ?>',
+                type: 'POST',
+                data: parametros,
+                headers: {
+                    'X-CSRF-Token': $('meta[name="csrfToken"]').attr('content')
+                },
+                cache : false,
+                processData: false,
+                contentType: false,
+                beforeSend: function(){},
+                success: function(response) {
+                    if (response) {
+                        window.location = "/products/view/" + "<?php echo ($product->product_id); ?>";
+                        
+                    }
+                }
+            })
+        }
+        
+    }))
 </script>
 

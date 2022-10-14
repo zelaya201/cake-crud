@@ -1,30 +1,9 @@
-<!-- <?php
+<?php
 /**
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Category $category
  */
 ?>
-<div class="row">
-    <aside class="column">
-        <div class="side-nav">
-            
-            <?= $this->Html->link(__('Lista de categorias'), ['action' => 'index'], ['class' => 'btn btn-primary']) ?>
-        </div>
-    </aside>
-    <div class="column-responsive column-80">
-        <div class="categories form content">
-            <?= $this->Form->create($category) ?>
-            <fieldset>
-                <legend><?= __('Agregar categoria') ?></legend>
-                <?php
-                    echo $this->Form->control('category_name');
-                ?>
-            </fieldset>
-            <?= $this->Form->button(__('Realizado'), ['class' => 'btn btn-success']) ?>
-            <?= $this->Form->end() ?>
-        </div>
-    </div>
-</div> -->
 <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -36,21 +15,31 @@
                 <div class="row">
                     <div class="col-md-1"></div>
                     <div class="col-md-10">
-                        <?= $this->Form->create($category, ['url' => ['action' => 'add'],'type' => 'file']) ?>
-                                                
+                        <?= $this->Form->create($category, ['url' => ['action' => 'add'], 'id' => 'form-add',
+                                                'class' => 'needs-validation', 'novalidate' => true]) ?>              
+                        <div class="row">
+                            <div class="col">
+                                <div id="alertPlaceholderAdd">
+                                </div>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-md-4">
                                 <h6>Nombre</h6>
                             </div>
                             <div class="col-md-8">
-                                <?= $this->Form->control('name', ['label' => false]) ?> 
+                                <?= $this->Form->control('name', ['label' => false, 'class' => 'form-control', 'required' => true]) ?> 
+                                <div class="invalid-feedback d-block">
+                                    <div id="invalid-name" class="mb-3">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" id="close-button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 <?= $this->Form->button(__('Guardar'), ['class' => 'btn-primary']) ?>
                 <?= $this->Form->end() ?>
             

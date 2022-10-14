@@ -14,14 +14,24 @@
                 <div class="row">
                     <div class="col-md-1"></div>
                     <div class="col-md-10">
-                        <?= $this->Form->create($record, ['url' => ['controller' => 'Products', 'action' => 'movingStock', $product->product_id], 'id' => 'form-stock']) ?>
+                        <?= $this->Form->create($record, ['url' => ['controller' => 'Products', 'action' => 'movingStock', $product->product_id], 'id' => 'form-stock',
+                                                'class' => 'needs-validation', 'novalidate' => true]) ?>
+                        <div class="row">
+                            <div class="col">
+                                <div id="alertPlaceholderStock">
+                                </div>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-md-4">
-                                <h6>Cantidad</h6>
+                                <h6>(*) Cantidad</h6>
                             </div>
                             <div class="col-md-8">
-                            <?= $this->Form->control('quantity', 
-                                ['label' => false]) ?>
+                                <?= $this->Form->control('quantity', 
+                                ['label' => false, 'required' => true]) ?>
+                                <div class="invalid-feedback d-block">
+                                    <div id="invalid-quantity" class="mb-3"></div>
+                                </div> 
                             </div>
                         </div>
                         <div class="row">
@@ -37,10 +47,9 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" id="close-button-stock" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 <?= $this->Form->button(__('Guardar'), ['class' => 'btn-primary']) ?>
                 <?= $this->Form->end() ?>
-            
             </div>
         </div>
     </div>
