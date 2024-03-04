@@ -14,7 +14,7 @@
         "davidyell/proffer": "dev-cake-4",
         "friendsofcake/bootstrap-ui": "^4.0",
         "intervention/image": "^2.5",
-        "mobiledetect/mobiledetectlib": "^2.8"
+        "mobiledetect/mobiledetectlib": "^4.8"
     },
     "require-dev": {
         "cakephp/cakephp": "~4.0",
